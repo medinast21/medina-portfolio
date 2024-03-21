@@ -7,4 +7,8 @@ This website was built using Python, MkDocs, and various extensions and plug-ins
 ## Portfolio Links
 * [Data Availability via Snowflake](DataAvailability_Snowflake.md)
 * [Nelnet API Reference Documentation](https://docs.nelnet.io/#introduction)
+    * This is a docs-as-code approach to API reference documentation. My team currently maintains and updates this site based on API/feature enhancements that affect the endpoints that our customers may use.
+* [Installing and Configuring the Act! Web API Connection]
+* [Press Release: Radiation Levels at the Fukushima Nuclear Reactor]
+* [Editing a newsletter for a colleague]
 

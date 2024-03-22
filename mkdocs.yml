@@ -51,5 +51,7 @@ markdown_extensions:
         emoji_index: !!python/name:material.extensions.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
 
+plugins:
+
 copyright: |
   &copy; 2024 <a href="https://linkedin.com/in/sethtmedina" target="_blank" rel="noopener">Seth Medina</a>

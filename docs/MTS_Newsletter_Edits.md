@@ -1,7 +1,9 @@
 # Editing
 
-<p>
+This newsletter was written by a colleague for a conference that our organization sponsored. 
 
-    <img src="X:\medina-portfolio\docs\MTS newsletter May2019-EDIT1.png" width="620" height="640" />
+Comments with feedback and suggested edits were provided by myself.
 
-</p>
+![MTS Newsletter](assets/MTS%20newsletter%20May2019-EDIT1.png)
+
+![MTS Newsletter2](assets/MTS%20newsletter%20May2019-EDIT2.png)

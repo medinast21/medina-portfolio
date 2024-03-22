@@ -1,4 +1,11 @@
-# Data Availability via Snowflake
+# Technical
+
+## Data Availability via Snowflake
+
+This technical document provides a high level understanding of the tooling and systems being used in the team's data analytics efforts and projects.
+
+* Velocity is the internal name for the company's loan servicing platform.
+* All sensitive information (database names, specific URLs, etc.) has been anonymized in order to add this content to my portfolio.
 
 ## Overview
 Snowflake is a cloud-based data warehouse that pulls in data from the various Velocity microservice databases. The Data Availability Team (DAT) uses a software called DBT as a tool to create different "views" within Snowflake. Each view in Snowflake is a SQL query that has been structured by the DAT to display various data elements in specific ways that are helpful for users when analyzing data. 
@@ -45,7 +52,7 @@ The role and permissions given to each user will determine which instance of Sno
 The URLs for each instance are listed here:
 
 * Read-only: https://xxxxxxxx.snowflakecomputing.com/
-* Full access: https://app.snowflake.com/us-west-2/xxxxxxxxx/
+* Full access: https://app.snowflake.com/us-west/xxxxxxxxx/
 
 The main difference between the two databases is that the full access database makes more tables visible to the user.
 

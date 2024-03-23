@@ -32,19 +32,19 @@ This short document was created as part of a proposal from the Information Syste
 - IBS software license and maintenance & support cost $60/month each, RTP costs $65/month each.
 - Active Network Retail Inventory Modules are additional for RTP, costing $2,415 annually.
 
-#### Current RTP Retail deficiencies:
+#### Current RTP Retail deficiencies
 * Scan guns are reaching life expectancy
 * RTP scan guns experience more problems than those used with IBS / EZLinks
 * Active Network support not as strong as EZLinks support
 * Unable to view retail variance in real-time
 * Poor membership experience; EZLinks is our preferred membership software
 * Must manually input member billing account charges from RTP to EZLinks
-#### Benefits of moving to EZLinks for Retail:
+#### Benefits of moving to EZLinks for Retail
 * Less problematic scan guns
 * EZLinks is used by our summer retail operations and our membership team
 * Members will be able to view purchases / receipts online
 * More user friendly for staff
-#### Cons of moving to EZLinks for Retail:
+#### Cons of moving to EZLinks for Retail
 * We lose resort charge functionality at retail locations
 
 ### Proposed solution

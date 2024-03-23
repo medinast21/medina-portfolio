@@ -6,12 +6,11 @@ Thanks for checking out my portfolio site!
 <style>
 
 img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 300px;
-  float: right;
-  margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    float: right;
+    margin: 20px;
 }
 
 </style>

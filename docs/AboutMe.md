@@ -16,7 +16,7 @@ img {
 
 </style>
 
-<img src="/assets/SethPortrait.png" alt="Seth Portrait"/>
+<img src="docs\assets\SethPortrait(300x300).png" alt="Seth Portrait"/>
 
 My name is Seth Medina and I've been a big fan of computers and technology since the 1st grade when my mom brought home a shiny new desktop computer. While she was using it to peruse the (new-to-the-world) Internet for new houses, I was just excited to try out all of the video games that were being planted in the boxes of my favorite breakfast cereals (anyone remember Chex Quest?). My love for computers and tech has only grown over the course of my life.
 

@@ -2,7 +2,11 @@
 
 Hey! Thanks for visiting my portfolio. This website houses a curated collection of technical writing/editing projects that I have worked on over the course of my career. If you would like to reach out to me with job inquiries or general questions, feel free to use the social media links in the lower-right corner to find me.
 
-This website was built using Python, MkDocs, and various extensions and plug-ins, and is currently hosted on GitHub Pages. All content has been created using Markdown.
+This website was built using Python, MkDocs, and various extensions and plug-ins, and is currently hosted on GitHub Pages. All content has been created using a combination of Markdown, HTML, and CSS.
+
+!!! tip
+        Click the toggle button to the left of the search bar above to swap between light and dark mode!
+
 
 ## Portfolio Links
 * [Data Availability via Snowflake](DataAvailability_Snowflake.md) (a high level internal document to help Business Analysts, Developers, and other stakeholders understand our data analytics tooling)

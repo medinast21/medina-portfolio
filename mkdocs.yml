@@ -26,6 +26,14 @@ theme:
       primary: teal
       accent: lime
 
+nav:
+    - 'index.md'
+    - 'DataAvailability_Snowflake.md'
+    - 'EZLinks_Capital_Proposal.md'
+    - 'MTS_Newsletter_Edits.md'
+    - 'PressRelease_FukushimaReactor.md'
+    - 'AboutMe.md'
+
 extra:
     social:
         - icon: fontawesome/brands/github-alt

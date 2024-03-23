@@ -113,12 +113,12 @@ XYZ_DB has two different schemas:
 One difference between the two schemas is that the Snowflake views for LENDER pull data from the Postgres database, while ORIGINATIONS views use a source file that gets created by the Originations system. This source file gets loaded into an AWS S3 bucket before being picked up by Snowflake (using the Snowpipe service) where changes in data are then loaded into the ORIGINATION_SOURCE table. It is this table that is used to create the views in Snowflake for Velocity Originations.
 
 ### The ANALYTICS_DB database
-The ANALYTICS_DB database is used by the Analytics team, as well as The Business, for reporting purposes. A list of these reports can be found in Snowflake in the Reports folder of the ANALYTICS_DB database.
+The ANALYTICS_DB database is used by the Analytics team, as well as the Business, for reporting purposes. A list of these reports can be found in Snowflake in the Reports folder of the ANALYTICS_DB database.
 
 ## External data sources
-Snowflake Marketplace connects users to hundreds of data providers, offering thousands of ready-to-use data resources.
+Snowflake Marketplace allows our users a connection to hundreds of data providers, offering thousands of ready-to-use data resources.
 
-Velocity and Analytics use a calendar data source to aid reporting efforts using date driven reports. The calendars are provided by Mondo Analytics: “Calendars for Financial and Analytics.”
+Velocity and Analytics use a calendar data source to aid reporting efforts using date driven reports. Specifically, they use "Calendars for Financial and Analytics" provided by Mondo Analytics.
 
 They are accessible via four views, and are installed on the four main Snowflake accounts:
 

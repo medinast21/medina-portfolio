@@ -63,3 +63,116 @@ To verify a successful connection for clients to see, create a blank test campai
 The Connect Link software operates over Port 80 (http), which is typically blocked by most organizations.
 You can find a list of other ports to try opening if the connection issues persist by opening the Connect Link menu.
 To do this, click the Windows Start button and search for "Act!".
+
+![Image place holder]()
+
+Click the Act! Connect Link option to launch the interface.
+Then, click the Config tab to view the different Connect Link settings / ports.
+
+![Image place holder]()
+
+#### Uninstalling / reinstalling Connect Link
+If opening these ports for the Connect Link software does not help resolve your connection problems, the next step is
+to try uninstalling and reinstalling the software.
+Open the installed programs list for the machine in question and uninstall the Connect Link software.
+Once the uninstall process finishes, navigate to the C: drive and delete the ActConnectLink folder.
+Then, reinstall the Connect Link software by running the installer file again.
+This will create a new endpoint / tenant for the Act! database and can help resolve some connectivity issues.
+Because this changes the API URL value, you may need to update the API URL for the database using the
+GetSetCloudAPIURL.bat file in the JWT token error KB article.
+
+!!! note
+        Uninstalling & reinstalling Connect Link will create a new Connect Link API web address. If a client is using
+        Connect Link for connections other than AMA (Act! Companion Mobile App, Zapier.com, etc.), they will need to be
+        notified to update their login credentials URL in those other programs.
+
+### Configuring the API URL endpoint via SSL certificate
+If the client wants a customized web URL when accessing their Act! database via web or wants the stability benefits
+of using the SSL certificate configuration instead of Connect Link, then an SSL certificate will need to be purchased
+and installed on the machine hosting the Act! database.
+Typically AspenTech Act! support agents do not handle obtaining or installing the SSL certificate directly.
+Have the client's IT vendor / contact handle the installation of the SSL certificate and once it has been installed the
+support agent will be able to configure the API endpoint for the Act! database.
+
+!!! note
+        An SSL certificate configuration requires Act! Premium for Web be installed on the host machine, along with
+        the completion of all Website Administration settings in Tools > Website Administration.
+
+Before the SSL certificate is purchased, discuss with the client their desired domain name URL for their Act! website /
+API endpoint.
+Typically this is something like marketing.companymame.com or act.companyname.com, but can be whatever
+the client desires to an extent.
+This information will need to be provided to the IT vendor / contact so they can purchase an SSL certificate with the
+proper domain name.
+
+#### Configuring IIS once the SSL certificate has been installed
+Once IT has installed the SSL certificate on the host machine, you are ready to configure the API endpoint URL.
+First, make sure the certificate is bound to the https port (443) in the IIS menu.
+To open the IIS menu, click the Windows Start button and type "IIS".
+Click on Internet Information Services (IIS) Manager to launch the interface.
+
+!!! note
+        Do not click on Internet Information Services (IIS) 6.0 Manager.
+
+In the Connections pane located in the left-hand column, expand each line until Default Website becomes visible.
+Click on Default Website to select it.
+Then, in the Actions pane in the right-hand column, click Bindings under Edit Site.
+If there is no https binding added, click the Add... button to create a new site binding.
+Click the Type dropdown button and choose https.
+Then click the SSL certificate dropdown to select the appropriate SSL certificate that was installed by IT.
+You should not need to change any other values for this binding if the SSL certificate was installed properly.
+If you do not see the SSL certificate in the dropdown menu for selection, it is likely the SSL certificate was not
+installed properly.
+
+![Image place holder]()
+
+After the SSL certificate has been added to the site binding, we need to set the API URL value in the database web
+configuration file.
+
+#### Setting the API URL value in the web configuration file
+A web configuration file is used to tell the database which URL should be used for the API endpoint connection.
+We want the database to use the newly installed SSL certificate / domain.
+Download the GetSetCloudAPIURL.bat file from the JWT token error KB article.
+Once downloaded, run this file and proceed through the Command Prompt tasks.
+First, type in the name of the database exactly as it appears in the list in the Command Prompt window to select it.
+You are then asked if you want to update the API URL value for this database.
+
+![Image place holder]()
+
+Type Y for "yes" and hit enter. Or type N for "no" if you chose the wrong database.
+Copy and paste (or type in) the full API URL that has been configured with the SSL certificate, including the
+/act.web.api pathing:
+https://actweb.mycompany.com/act.web.api
+Hit Enter on your keyboard once the URL has been entered into the Command Prompt properly.
+The Command Prompt will return a message confirming the change to the configuration value.
+Exit the Command Prompt.
+
+#### Testing / verifying the SSL certificate
+Open a web browser and navigate to the domain URL that was configured with the SSL certificate.
+To test APFW functionality, add /apfw to the end of the URL:
+https://actweb.companyname.com/apfw
+To test the web API connection, add /act.web.api to the end of the URL:
+https://actweb.companyname.com/act.web.api
+The URL with /apfw in its path should open a webpage where you can log into the Act! database using Act! user
+credentials.
+The URL with /act.web.api in its path will open a webpage displaying the Act! web API help documentation.
+If either of these pages do not load as you expect them to, there is likely something in the firewall blocking the
+connections.
+We can test our Act! configuration by utilizing the local file directories that have been configured in IIS.
+Open a web browser and browse to these two URLs:
+localhost/apfw
+localhost/act.web.api
+If the Website Administration tasks have been configured successfully, these two options will return the expected
+webpages: the login for the Act! database and the Act! web API help documentation page.
+If the local sites load properly, but the domain sites (using the SSL certificate) do not, then something is being
+blocked regarding the SSL certificate domain or https port (443).
+If the local sites do not load properly, your Act! Website Administration configuration may be misconfigured
+somewhere, or the firewall is blocking portions of the Act! application from running properly.
+
+### Adding Act! Web API to a Act! Premium (non-web) installation
+If the client's server / host machine is not using Act! Premium for Web (APFW), you will not be able to run an SSL
+certificate configuration for API connectivity.
+In order to successfully bind an SSL certificate to an Act! database, you need to install Act! Premium for Web. The
+APFW installation process creates the necessary virtual directories in IIS that are used with an SSL certificate.
+Clients can still create an API connection for their non-web Act! database by installing and configuring the Act!
+Connect Link software on the server / host machine.

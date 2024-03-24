@@ -32,4 +32,16 @@ Link to create an API endpoint URL (only recommended for use with non-web Act! P
 * SSL certificate configurations tend to be more stable and provide smoother functionality across services that
 require the API endpoint connection (especially when dealing with databases that are large or have large data sets).
 
-1. ### Installing and configuring Act! Connect Link
+### Installing and configuring Act! Connect Link
+Installing Act! Connect Link on a client's machine will create a secure ground-to-cloud connection from that machine
+to the cloud server being hosted by the company providing this service.
+To install Connect Link, download the installer from the Act! website and run the .exe file, accepting all of the default
+options.
+Once the software has been installed, a unique URL is generated for use as the database's API endpoint.
+To view this unique URL that has been generated, open the Act! software.
+Then, click the Act! Connect button in the column of options seen in the lower-left corner of the program window.
+If the connection is working properly, you should see the URL displayed along the top of the program window.
+This link can be copied to your clipboard using the button under the URL.
+
+![Image place holder]()
+

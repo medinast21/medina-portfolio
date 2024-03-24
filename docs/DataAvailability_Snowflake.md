@@ -21,8 +21,9 @@ Additionally, Snowflake currently serves as a data warehouse for entities other 
 
 !!! info "Data before Snowflake"
         Velocity launched in 2019 and Snowflake became the preferred data warehouse for Velocity in 2021. 
-        Due to this timeline, there is approximately 1.5 years worth of data that exists in Velocity that does not exist in Snowflake at this time. 
-        There is an old RDS environment (Redshift Postgres) that acted as a temporary solution prior to adopting Snowflake that is still active and houses this older data as well.
+        Due to this timeline, there is approximately 1.5 years worth of data that exists in Velocity that does not exist in Snowflake at this 
+        time. There is an old RDS environment (Redshift Postgres) that acted as a temporary solution prior to adopting Snowflake that is still 
+        active and houses this older data as well.
 
         The earliest records in Snowflake have a timestamp of around March of 2021.
 
@@ -66,9 +67,11 @@ One caveat with Snowflake views is that not all data in Velocity is available in
 Currently, views within Snowflake display data from the XYZ database. However, there are other databases that exist outside of Velocity that might have information that is unrelated to Velocity; or is Velocity-related, but maintained by other teams (such as Analytics, Ops Analysts, etc.).
 
 !!! info
-        The views in Snowflake are non-materialized, meaning each view will re-run the SQL query that generates it and display the current data when called. 
+        The views in Snowflake are non-materialized, meaning each view will re-run the SQL query that generates it and display the 
+        current data when called. 
 
-        Creating Snowflake views is necessary because people need to see the various pieces of data without having access to the actual tables where the data is housed.
+        Creating Snowflake views is necessary because people need to see the various pieces of data without having access to the 
+        actual tables where the data is housed.
 
 The different types of views currently available in Snowflake for the XYZ database are:
 

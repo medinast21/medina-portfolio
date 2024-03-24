@@ -11,6 +11,7 @@ This website was built using Python, MkDocs, and various extensions and plug-ins
 ## Portfolio Links
 * [Technical: Data Availability via Snowflake](DataAvailability_Snowflake.md) (a high level internal document to help Business Analysts, Developers, and other stakeholders understand our data analytics tooling)
 * [Proposal: Changing software and hardware for the Retail department](EZLinks_Capital_Proposal.md)
+* [SOP: Installing and Configuring the Act! Web API Database Connection](SOP.md)
 * [Editing: Mountain Technology Symposium Newsletter](MTS_Newsletter_Edits.md)
 * [News Coverage / Blog Post: ]()
 * [Nelnet API Reference Documentation](https://docs.nelnet.io/#introduction) (a docs-as-code approach to API reference documentation. My team currently maintains and updates this site based on API/feature enhancements that affect the endpoints that our customers may use.)

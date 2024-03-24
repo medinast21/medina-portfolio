@@ -48,13 +48,18 @@ This link can be copied to your clipboard using the button under the URL.
 !!! note
         The API URL should be updated in the configuration file in the Act! program folders automatically,
         but occasionally it does not get set properly. If this happens, you will need to use the GetSetCloudAPIURL.bat file
-        found in the JWT token error KB article to set the value manually.
+        found in the JWT token error ![KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation) to set the value manually.
 
 #### Using ConnectLink with APFW
 If the machine you have installed Connect Link on is using Act! Premium for Web, ensure the **Website Administration** settings have all been configured and tested successfully. You can find these settings in **Tools > Website Administration...**
 
 To test a successful API connection to the Act! database, you can copy and paste the API URL into a web browser. If the connection is working properly, the Act! Web API Documentation webpage will display. If the client is using Act! Marketing Automation, you can also attempt to open the AMA module in Act!.
 
-To verify a successful connection, create a blank test campaign in AMA and attempt to select an Act! Group for the campaign. If the groups in the database appear for selection, you have a working API connection.
+To verify a successful connection for clients to see, create a blank test campaign in AMA and attempt to select an Act! Group for the campaign. If the groups in the database appear for selection, you have a working API connection.
 
 ![Image place holder]()
+
+#### Troubleshooting the Act! Connect Link connection
+The Connect Link software operates over Port 80 (http), which is typically blocked by most organizations.
+You can find a list of other ports to try opening if the connection issues persist by opening the Connect Link menu.
+To do this, click the Windows Start button and search for "Act!".

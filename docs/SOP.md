@@ -68,7 +68,7 @@ options.
     
     - If the client is using Act! Marketing Automation, you can also attempt to open the AMA module in Act!.
 
-- To verify a successful connection for clients to see:
+- To verify a successful connection for clients using AMA to see:
 
     - Create a blank test campaign in AMA and attempt to select an Act! Group for the campaign.
     - If the groups in the database appear for selection, you have a working API connection.
@@ -93,12 +93,16 @@ You can find a list of other ports to try opening if the connection issues persi
 #### Uninstalling / reinstalling Connect Link
 If opening these ports for the Connect Link software does not help resolve your connection problems, the next step is
 to try uninstalling and reinstalling the software.
-Open the installed programs list for the machine in question and uninstall the Connect Link software.
-Once the uninstall process finishes, navigate to the C: drive and delete the ActConnectLink folder.
-Then, reinstall the Connect Link software by running the installer file again.
+
+1. Open the installed programs list for the machine in question and uninstall the Connect Link software.
+
+2. Once the uninstall process finishes, navigate to the C: drive and delete the ActConnectLink folder.
+
+3. Reinstall the Connect Link software by running the installer file again.
+
 This will create a new endpoint / tenant for the Act! database and can help resolve some connectivity issues.
-Because this changes the API URL value, you may need to update the API URL for the database using the
-GetSetCloudAPIURL.bat file in the JWT token error [KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation).
+
+Because this changes the API URL value, you may need to update the API URL for the database using the GetSetCloudAPIURL.bat file in the JWT token error [KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation).
 
 !!! note
         Uninstalling & reinstalling Connect Link will create a new Connect Link API web address. If a client is using
@@ -109,9 +113,11 @@ GetSetCloudAPIURL.bat file in the JWT token error [KB article](https://help.act.
 If the client wants a customized web URL when accessing their Act! database via web or wants the stability benefits
 of using the SSL certificate configuration instead of Connect Link, then an SSL certificate will need to be purchased
 and installed on the machine hosting the Act! database.
+
 Typically AspenTech Act! support agents do not handle obtaining or installing the SSL certificate directly.
-Have the client's IT vendor / contact handle the installation of the SSL certificate and once it has been installed the
-support agent will be able to configure the API endpoint for the Act! database.
+
+Have the client's IT vendor / contact handle the installation of the SSL certificate and once it has been installed, the
+consultant will be able to configure the API endpoint for the Act! database.
 
 !!! note
         An SSL certificate configuration requires Act! Premium for Web be installed on the host machine, along with
@@ -119,27 +125,39 @@ support agent will be able to configure the API endpoint for the Act! database.
 
 Before the SSL certificate is purchased, discuss with the client their desired domain name URL for their Act! website /
 API endpoint.
+
 Typically this is something like marketing.companymame.com or act.companyname.com, but can be whatever
 the client desires to an extent.
+
 This information will need to be provided to the IT vendor / contact so they can purchase an SSL certificate with the
 proper domain name.
 
 #### Configuring IIS once the SSL certificate has been installed
 Once IT has installed the SSL certificate on the host machine, you are ready to configure the API endpoint URL.
-First, make sure the certificate is bound to the https port (443) in the IIS menu.
-To open the IIS menu, click the Windows Start button and type "IIS".
-Click on Internet Information Services (IIS) Manager to launch the interface.
+
+1. Make sure the certificate is bound to the https port (443) in the IIS menu.
+
+2. To open the IIS menu, click the Windows Start button and type "IIS".
+
+3. Click on Internet Information Services (IIS) Manager to launch the interface.
 
 !!! note
         Do not click on Internet Information Services (IIS) 6.0 Manager.
 
-In the Connections pane located in the left-hand column, expand each line until Default Website becomes visible.
-Click on Default Website to select it.
-Then, in the Actions pane in the right-hand column, click Bindings under Edit Site.
-If there is no https binding added, click the Add... button to create a new site binding.
-Click the Type dropdown button and choose https.
-Then click the SSL certificate dropdown to select the appropriate SSL certificate that was installed by IT.
+4. In the Connections pane located in the left-hand column, expand each line until Default Website becomes visible.
+
+5. Click on Default Website to select it.
+
+6. In the Actions pane in the right-hand column, click Bindings under Edit Site.
+
+7. If there is no https binding added, click the **Add...** button to create a new site binding.
+
+8. Click the **Type** dropdown menu and choose **https**.
+
+9. Click the **SSL certificate** dropdown menu to select the appropriate SSL certificate that was installed by IT.
+
 You should not need to change any other values for this binding if the SSL certificate was installed properly.
+
 If you do not see the SSL certificate in the dropdown menu for selection, it is likely the SSL certificate was not
 installed properly.
 

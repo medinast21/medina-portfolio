@@ -60,15 +60,18 @@ options.
 
 #### Using Connect Link with APFW
 
-- If the machine you have installed Connect Link on is using Act! Premium for Web, ensure the **Website Administration** settings have all been configured and tested successfully. 
-        - You can find these settings in **Tools > Website Administration...**
+- If the machine you have installed Connect Link on is using Act! Premium for Web, ensure the **Website Administration** settings have all been configured and tested successfully.
+    
+    - You can find these settings in **Tools > Website Administration...**
 
 - To test a successful API connection to the Act! database, copy and paste the API URL into a web browser. If the connection is working properly, the Act! Web API Documentation webpage will display. 
-        - If the client is using Act! Marketing Automation, you can also attempt to open the AMA module in Act!.
+    
+    - If the client is using Act! Marketing Automation, you can also attempt to open the AMA module in Act!.
 
 - To verify a successful connection for clients to see:
-        - Create a blank test campaign in AMA and attempt to select an Act! Group for the campaign.
-        - If the groups in the database appear for selection, you have a working API connection.
+
+    - Create a blank test campaign in AMA and attempt to select an Act! Group for the campaign.
+    - If the groups in the database appear for selection, you have a working API connection.
 
 ![AMA Campaign Group Selection](assets/AMA_Campaign_GroupSelection.PNG)
 
@@ -79,7 +82,7 @@ You can find a list of other ports to try opening if the connection issues persi
 
 1. To open the Connect Link menu, click the Windows Start button and search for "Act!".
 
-  ![Start Menu Search - Connect Link](assets/StartMenu_ConnectLink.PNG)
+    ![Start Menu Search - Connect Link](assets/StartMenu_ConnectLink.PNG)
 
 2. Click the Act! Connect Link option to launch the interface.
 

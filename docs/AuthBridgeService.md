@@ -18,7 +18,7 @@ from the client's IT department).
 
 #### What Nelnet provides to the client
 * Nelnet creates the authentication bridge records and sends the bridge key to the client.
-* The bridge authentication endpoint URL: https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate
+* The bridge authentication endpoint URL: `https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate`
     * Depending on the environment, replace the <ENV> with the value provided for a specific environment.
 
 ### Process requirements
@@ -33,13 +33,8 @@ from the client's IT department).
         Aw5o2juUfsqDKM5OI1/AhzEwFmnX16LfCiMOJYhCMYNM55m3Cn7z/AmojMq2mbGE
         CtGAaIGx+2zZlfVLIF4sv8ONvyMxyGmgiwvIjrk44AkwZQN6dZq0XkuZsbtVqZ8p
         tC/MjPNavY7GuM8YL5OTYdcS6BgSDlGuo1zf7jEH5Qp54uFqrYH75x6llK7QasVe
-        ERpEULjdxymVB+cql8KqpAycTCC/mM0auOAn3fnktQ3Irt9HBUAGIYHHeGyWGHFb
-        6oIZTW3wrTaCZXDyaW7d9T0ZBE5bVts3NTCBh2geJbbctI4U52hWMLtgnuXtcS6l
-        GzBkjEcnZb4fNU9guYCJXnQoVe0KFrD2V+cLYlfgltmlp1C3+CUkJV1E+0XTjXex
-        lsW4VZ+wiZ3i8b9tYKBfhLhmc3/bpafnBl1RCNerl1eNuBHFGj6Px/y6KRMtf/03
-        FkMyz5tC/jV0a7LYLNTKedxuKeLphWUJnZYdZM2tnPy6u8aoQhEiHbNMny2awM0/
-        Ighfbyudd5m2xLSfA6gtlzS7oJm7cs6gCYZkv85i8ynndBHfoXdxb+coEO0WepJ2
-        LjMaeSIArpf6HZ1yVkjn/bsCAwEAAQ==
+        \nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA0YIiAk0FN1Wv\n9Mww
+        IDAQAB\n
         -----END PUBLIC KEY-----
     ```
 
@@ -50,8 +45,8 @@ from the client's IT department).
 
     ``` json title="Minimum JWT Payload"
         {
-            "velocityBorrowerId": "f2963298-c6b7-49d8-81e2-84b9b4766d69",
-            "sub": "a812415d-58c3-4992-9926-ee9f423e8a93",
+            "velocityBorrowerId": "9d4b59f3-86a3-42f6-8f3e-50272f85d01c",
+            "sub": "a867824d-58c3-4992-9926-ee9f423e8a93",
             "scp": "api_borrower",
             "iat": 1567550002,
             "exp": 1583328478

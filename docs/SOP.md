@@ -35,15 +35,21 @@ require the API endpoint connection (especially when dealing with databases that
 ### Installing and configuring Act! Connect Link
 Installing Act! Connect Link on a client's machine will create a secure ground-to-cloud connection from that machine
 to the cloud server being hosted by the company providing this service.
+
 To install Connect Link, download the installer from the Act! website and run the .exe file, accepting all of the default
 options.
+
 Once the software has been installed, a unique URL is generated for use as the database's API endpoint.
+
 To view this unique URL that has been generated, open the Act! software.
+
 Then, click the Act! Connect button in the column of options seen in the lower-left corner of the program window.
+
 If the connection is working properly, you should see the URL displayed along the top of the program window.
+
 This link can be copied to your clipboard using the button under the URL.
 
-![Image place holder]()
+![Connect Link URL Displayed](assets/ConnectLink_URL.PNG)
 
 !!! note
         The API URL should be updated in the configuration file in the Act! program folders automatically,
@@ -57,19 +63,19 @@ To test a successful API connection to the Act! database, you can copy and paste
 
 To verify a successful connection for clients to see, create a blank test campaign in AMA and attempt to select an Act! Group for the campaign. If the groups in the database appear for selection, you have a working API connection.
 
-![Image place holder]()
+![AMA Campaign Group Selection](assets/AMA_Campaign_GroupSelection.PNG)
 
 #### Troubleshooting the Act! Connect Link connection
 The Connect Link software operates over Port 80 (http), which is typically blocked by most organizations.
 You can find a list of other ports to try opening if the connection issues persist by opening the Connect Link menu.
 To do this, click the Windows Start button and search for "Act!".
 
-![Image place holder]()
+![Start Menu Search - Connect Link](assets/StartMenu_ConnectLink.PNG)
 
 Click the Act! Connect Link option to launch the interface.
 Then, click the Config tab to view the different Connect Link settings / ports.
 
-![Image place holder]()
+![Connect Link Config Menu](assets/ConnectLink_Config.PNG)
 
 #### Uninstalling / reinstalling Connect Link
 If opening these ports for the Connect Link software does not help resolve your connection problems, the next step is
@@ -124,7 +130,7 @@ You should not need to change any other values for this binding if the SSL certi
 If you do not see the SSL certificate in the dropdown menu for selection, it is likely the SSL certificate was not
 installed properly.
 
-![Image place holder]()
+![IIS Site Binding Configuration](assets/IIS_SiteBinding.PNG)
 
 After the SSL certificate has been added to the site binding, we need to set the API URL value in the database web
 configuration file.
@@ -137,7 +143,7 @@ Once downloaded, run this file and proceed through the Command Prompt tasks.
 First, type in the name of the database exactly as it appears in the list in the Command Prompt window to select it.
 You are then asked if you want to update the API URL value for this database.
 
-![Image place holder]()
+![CMD Prompt - Set API URL Value](assets/CMD_GetSetAPIURL.PNG)
 
 Type Y for "yes" and hit enter. Or type N for "no" if you chose the wrong database.
 Copy and paste (or type in) the full API URL that has been configured with the SSL certificate, including the

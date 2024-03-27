@@ -116,8 +116,7 @@ and installed on the machine hosting the Act! database.
 
 Typically AspenTech Act! support agents do not handle obtaining or installing the SSL certificate directly.
 
-Have the client's IT vendor / contact handle the installation of the SSL certificate and once it has been installed, the
-consultant will be able to configure the API endpoint for the Act! database.
+Have the client's IT vendor / contact handle the installation of the SSL certificate and once it has been installed, the AspenTech consultant will be able to configure the API endpoint for the Act! database.
 
 !!! note
         An SSL certificate configuration requires Act! Premium for Web be installed on the host machine, along with
@@ -141,8 +140,8 @@ Once IT has installed the SSL certificate on the host machine, you are ready to 
 
 3. Click on Internet Information Services (IIS) Manager to launch the interface.
 
-!!! note
-        Do not click on Internet Information Services (IIS) 6.0 Manager.
+    !!! note
+            Do not click on Internet Information Services (IIS) 6.0 Manager.
 
 4. In the Connections pane located in the left-hand column, expand each line until Default Website becomes visible.
 

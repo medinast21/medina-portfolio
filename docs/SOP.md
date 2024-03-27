@@ -210,7 +210,7 @@ credentials.
 If either of these pages do not load as you expect them to, there is likely something in the firewall blocking the
 connections.
 
-We can test our Act! configuration by utilizing the local file directories that have been configured in IIS.
+To verify that the Act! configuration was completed properly, use the local file directories that have been configured in IIS:
 
 1. Open a web browser and browse to these two URLs:
 

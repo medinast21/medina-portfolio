@@ -26,13 +26,6 @@ from the client's IT department).
 
 2. The client sends the public key of the keyset to Nelnet.
 
-        ![Image placeholder]()
-
-3. Nelnet configures the authentication bridge and sends the bridge key to the client.
-    * Example: 418281ac-22dc-4a37-a136-9c377a41da31
-
-4. The client creates a new JWT that is signed with the private key generated above, using the payload formatting shown in the example here:
-
         ``` title="Public Key Example"
         -----BEGIN PUBLIC KEY-----
         MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA5osWL21cwZ3LWjLTsx5T
@@ -48,13 +41,28 @@ from the client's IT department).
         Ighfbyudd5m2xLSfA6gtlzS7oJm7cs6gCYZkv85i8ynndBHfoXdxb+coEO0WepJ2
         LjMaeSIArpf6HZ1yVkjn/bsCAwEAAQ==
         -----END PUBLIC KEY-----
-```
+        ```
+
+3. Nelnet configures the authentication bridge and sends the bridge key to the client.
+    * Example: 418281ac-22dc-4a37-a136-9c377a41da31
+
+4. The client creates a new JWT that is signed with the private key generated above, using the payload formatting shown in the example here:
+
+        ``` json title="Minimum JWT Payload"
+        {
+            "velocityBorrowerId": "f2963298-c6b7-49d8-81e2-84b9b4766d69",
+            "sub": "a812415d-58c3-4992-9926-ee9f423e8a93",
+            "scp": "api_borrower",
+            "iat": 1567550002,
+            "exp": 1583328478
+        }
+        ```
 
 5. The client calls the authentication bridge's authenticate endpoint URL (POST) using the parameters listed in the example shown here:
     * Authorization: The JWT that was generated from Step 4.
     * Bridge-Key: The bridge key value provided by Nelnet.
 
-        ``` title="CURL"
+        ``` c title="CURL"
         curl -L -X POST 'https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate' \
         -H 'Content-Type: application/json' \
         -H 'Authorization: Bearer <CLIENT.TOKEN>' \
@@ -62,7 +70,7 @@ from the client's IT department).
         ```
 
 6. A successful request returns a JSON payload including the data shown in the example here:
-        ``` title="Response - Status: 201 Created"
+        ``` json title="Response - Status: 201 Created"
         {
             "data": {
                 "accessToken": "<VELOCITY.BORROWER.TOKEN>",

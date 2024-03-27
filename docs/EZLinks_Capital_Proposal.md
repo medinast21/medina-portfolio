@@ -23,11 +23,13 @@ This short document was created as part of a proposal from the Information Syste
 |-------------------------------------|----------|----------------|-----------------|
 | IBS Software License / Maintenance & Support  | 6  | $60 each   | $4,320         |
 | IBS Retail Inventory Modules        | -        | -              | $0             |
+| Total                                    | -        | -              | Total: $4,320             |
 
 | Item                                | Quantity | Cost (Monthly) | Cost (Annually) |
 |-------------------------------------|----------|----------------|-----------------|
 | RTP Software License / Maintenance & Support  | 6  | $65 each   | $4,680         |
 | Active Network Retail Inventory Modules | -      | -              | $2,415         |
+| Total                       | -        | -              | Total: $7,095             |
 
 - IBS software license and maintenance & support cost $60/month each, RTP costs $65/month each.
 - Active Network Retail Inventory Modules are additional for RTP, costing $2,415 annually.

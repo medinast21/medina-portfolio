@@ -105,14 +105,13 @@ This will create a new endpoint / tenant for the Act! database and can help reso
 Because this changes the API URL value, you may need to update the API URL for the database using the GetSetCloudAPIURL.bat file in the JWT token error [KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation).
 
 !!! note
-        Uninstalling & reinstalling Connect Link will create a new Connect Link API web address. If a client is using
+        Uninstalling & reinstalling Connect Link will create a new Connect Link API web URL. If a client is using
         Connect Link for connections other than AMA (Act! Companion Mobile App, Zapier.com, etc.), they will need to be
         notified to update their login credentials URL in those other programs.
 
 ### Configuring the API URL endpoint via SSL certificate
 If the client wants a customized web URL when accessing their Act! database via web or wants the stability benefits
-of using the SSL certificate configuration instead of Connect Link, then an SSL certificate will need to be purchased
-and installed on the machine hosting the Act! database.
+of using the SSL certificate configuration, then an SSL certificate will need to be purchased and installed on the machine hosting the Act! database.
 
 Typically AspenTech Act! support agents do not handle obtaining or installing the SSL certificate directly.
 

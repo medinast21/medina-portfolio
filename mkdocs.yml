@@ -29,6 +29,7 @@ theme:
 nav:
     - 'index.md'
     - 'DataAvailability_Snowflake.md'
+    - 'Technical2.md'
     - 'EZLinks_Capital_Proposal.md'
     - 'SOP.md'
     - 'MTS_Newsletter_Edits.md'

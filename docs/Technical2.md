@@ -49,3 +49,26 @@ Ighfbyudd5m2xLSfA6gtlzS7oJm7cs6gCYZkv85i8ynndBHfoXdxb+coEO0WepJ2
 LjMaeSIArpf6HZ1yVkjn/bsCAwEAAQ==
 -----END PUBLIC KEY-----
 ```
+
+5. The client calls the authentication bridge's authenticate endpoint URL (POST) using the parameters listed in the example shown here:
+    * Authorization: The JWT that was generated from Step 4.
+    * Bridge-Key: The bridge key value provided by Nelnet.
+
+``` title="CURL"
+curl -L -X POST 'https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer <CLIENT.TOKEN>' \
+-H 'Bridge-Key: <CLIENT.BRIDGEKEY>'
+```
+
+6. A successful request returns a JSON payload including the data shown in the example here:
+``` title="Response - Status: 201 Created"
+{
+    "data": {
+        "accessToken": "<VELOCITY.BORROWER.TOKEN>",
+        "tokenType": "Bearer",
+        "issuedAt": 1653672915,
+        "expiresIn": 1653676515
+    }
+}
+```

@@ -167,21 +167,29 @@ configuration file.
 
 #### Setting the API URL value in the web configuration file
 A web configuration file is used to tell the database which URL should be used for the API endpoint connection.
+
 We want the database to use the newly installed SSL certificate / domain.
-Download the GetSetCloudAPIURL.bat file from the JWT token error [KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation).
-Once downloaded, run this file and proceed through the Command Prompt tasks.
-First, type in the name of the database exactly as it appears in the list in the Command Prompt window to select it.
-You are then asked if you want to update the API URL value for this database.
 
-![CMD Prompt - Set API URL Value](assets/CMD_GetSetAPIURL.PNG)
+1. Download the GetSetCloudAPIURL.bat file from the JWT token error [KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation).
 
-Type Y for "yes" and hit enter. Or type N for "no" if you chose the wrong database.
-Copy and paste (or type in) the full API URL that has been configured with the SSL certificate, including the
-/act.web.api pathing:
-https://actweb.mycompany.com/act.web.api
-Hit Enter on your keyboard once the URL has been entered into the Command Prompt properly.
-The Command Prompt will return a message confirming the change to the configuration value.
-Exit the Command Prompt.
+2. Run the GetSetCloudAPIURL.bat file and proceed through the Command Prompt tasks.
+
+3. Type in the name of the database exactly as it appears in the list in the Command Prompt window to select it.
+
+4. You are then asked if you want to update the API URL value for this database.
+
+    ![CMD Prompt - Set API URL Value](assets/CMD_GetSetAPIURL.PNG)
+
+5. Type Y for "yes" and hit enter. Or type N for "no" if you chose the wrong database.
+
+6. Copy and paste (or type in) the full API URL that has been configured with the SSL certificate, including the
+/act.web.api pathing: `https://actweb.mycompany.com/act.web.api`
+
+7. Hit Enter on your keyboard once the URL has been entered into the Command Prompt properly.
+
+8. The Command Prompt will return a message confirming the change to the configuration value.
+
+9. Exit the Command Prompt.
 
 #### Testing / verifying the SSL certificate
 Open a web browser and navigate to the domain URL that was configured with the SSL certificate.

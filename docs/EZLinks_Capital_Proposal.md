@@ -13,7 +13,7 @@ This short document was created as part of a proposal from the Information Syste
 | MC2100 Model Scan Guns (or similar)  | 11       | ~ $9,075        | ~ $9,075     |
 | 3-Year Service Warranty              | 11       | ~ $2,860        | ~ $2,860     |
 | MC2100 Scan Gun Cradles + Accessories| 6        | ~ $1,694        | ~ $1,694     |
-| Total                                |          | ~ $13,629       | ~ $13,629    |
+| Total                                | -         | ~ $13,629       | ~ $13,629    |
 
 - Cost per scan gun: ~ $1,085 for IBS / ~ $1,720 for RTP
 
@@ -23,13 +23,13 @@ This short document was created as part of a proposal from the Information Syste
 |-------------------------------------|----------|----------------|-----------------|
 | IBS Software License / Maintenance & Support  | 6  | $60 each   | $4,320         |
 | IBS Retail Inventory Modules        | -        | -              | $0             |
-| Total                                    | -        | -              | Total: $4,320             |
+| Total                                    | -        | -              | $4,320             |
 
 | Item                                | Quantity | Cost (Monthly) | Cost (Annually) |
 |-------------------------------------|----------|----------------|-----------------|
 | RTP Software License / Maintenance & Support  | 6  | $65 each   | $4,680         |
 | Active Network Retail Inventory Modules | -      | -              | $2,415         |
-| Total                       | -        | -              | Total: $7,095             |
+| Total                       | -        | -              | $7,095             |
 
 - IBS software license and maintenance & support cost $60/month each, RTP costs $65/month each.
 - Active Network Retail Inventory Modules are additional for RTP, costing $2,415 annually.

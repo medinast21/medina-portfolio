@@ -19,7 +19,7 @@ from the client's IT department).
 #### What Nelnet provides to the client
 * Nelnet creates the authentication bridge records and sends the bridge key to the client.
 * The bridge authentication endpoint URL: `https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate`
-    * Depending on the environment, replace the <ENV> with the value provided for a specific environment.
+    * Depending on the environment, replace the `<ENV>` with the value provided for a specific environment.
 
 ### Process requirements
 1. The client must create a new public/private keyset using the RSA algorithm; this should be around 4096 bits in size.

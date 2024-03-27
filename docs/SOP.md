@@ -192,25 +192,37 @@ We want the database to use the newly installed SSL certificate / domain.
 9. Exit the Command Prompt.
 
 #### Testing / verifying the SSL certificate
-Open a web browser and navigate to the domain URL that was configured with the SSL certificate.
-To test APFW functionality, add /apfw to the end of the URL:
-https://actweb.companyname.com/apfw
-To test the web API connection, add /act.web.api to the end of the URL:
-https://actweb.companyname.com/act.web.api
-The URL with /apfw in its path should open a webpage where you can log into the Act! database using Act! user
+To verify the SSL configuration was completed properly:
+
+1. Open a web browser and navigate to the domain URL that was configured with the SSL certificate.
+
+2. To test APFW functionality, add /apfw to the end of the URL:
+`https://actweb.companyname.com/apfw`
+
+3. To test the web API connection, add /act.web.api to the end of the URL:
+`https://actweb.companyname.com/act.web.api`
+
+4. The URL with /apfw in its path should open a webpage where you can log into the Act! database using Act! user
 credentials.
-The URL with /act.web.api in its path will open a webpage displaying the Act! web API help documentation.
+
+5. The URL with /act.web.api in its path will open a webpage displaying the Act! web API help documentation.
+
 If either of these pages do not load as you expect them to, there is likely something in the firewall blocking the
 connections.
+
 We can test our Act! configuration by utilizing the local file directories that have been configured in IIS.
-Open a web browser and browse to these two URLs:
-localhost/apfw
-localhost/act.web.api
-If the Website Administration tasks have been configured successfully, these two options will return the expected
+
+1. Open a web browser and browse to these two URLs:
+    * `localhost/apfw`
+    * `localhost/act.web.api`
+
+2. If the Website Administration tasks have been configured successfully, these two options will return the expected
 webpages: the login for the Act! database and the Act! web API help documentation page.
-If the local sites load properly, but the domain sites (using the SSL certificate) do not, then something is being
+
+3. If the local sites load properly, but the domain sites (using the SSL certificate) do not, then something is being
 blocked regarding the SSL certificate domain or https port (443).
-If the local sites do not load properly, your Act! Website Administration configuration may be misconfigured
+
+4. If the local sites do not load properly, your Act! Website Administration configuration may be misconfigured
 somewhere, or the firewall is blocking portions of the Act! application from running properly.
 
 ### Adding Act! Web API to a Act! Premium (non-web) installation

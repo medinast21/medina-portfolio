@@ -48,15 +48,15 @@ from the client's IT department).
 
 4. The client creates a new JWT that is signed with the private key generated above, using the payload formatting shown in the example here:
 
-        ``` json title="Minimum JWT Payload"
-            {
-                "velocityBorrowerId": "f2963298-c6b7-49d8-81e2-84b9b4766d69",
-                "sub": "a812415d-58c3-4992-9926-ee9f423e8a93",
-                "scp": "api_borrower",
-                "iat": 1567550002,
-                "exp": 1583328478
-            }
-        ```
+    ``` json title="Minimum JWT Payload"
+        {
+            "velocityBorrowerId": "f2963298-c6b7-49d8-81e2-84b9b4766d69",
+            "sub": "a812415d-58c3-4992-9926-ee9f423e8a93",
+            "scp": "api_borrower",
+            "iat": 1567550002,
+            "exp": 1583328478
+        }
+    ```
 
 5. The client calls the authentication bridge's authenticate endpoint URL (POST) using the parameters listed in the example shown here:
     * Authorization: The JWT that was generated from Step 4.
@@ -71,13 +71,13 @@ from the client's IT department).
 
 6. A successful request returns a JSON payload including the data shown in the example here:
         
-        ``` json title="Response - Status: 201 Created"
-            {
-                "data": {
-                    "accessToken": "<VELOCITY.BORROWER.TOKEN>",
-                    "tokenType": "Bearer",
-                    "issuedAt": 1653672915,
-                    "expiresIn": 1653676515
-                }
+    ``` json title="Response - Status: 201 Created"
+        {
+            "data": {
+                "accessToken": "<VELOCITY.BORROWER.TOKEN>",
+                "tokenType": "Bearer",
+                "issuedAt": 1653672915,
+                "expiresIn": 1653676515
             }
-        ```
+        }
+    ```

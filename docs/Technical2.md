@@ -62,7 +62,7 @@ from the client's IT department).
     * Authorization: The JWT that was generated from Step 4.
     * Bridge-Key: The bridge key value provided by Nelnet.
 
-        ``` c title="CURL"
+        ``` c hl_lines="1 3 4" title="CURL"
         curl -L -X POST 'https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate' \
         -H 'Content-Type: application/json' \
         -H 'Authorization: Bearer <CLIENT.TOKEN>' \
@@ -70,6 +70,7 @@ from the client's IT department).
         ```
 
 6. A successful request returns a JSON payload including the data shown in the example here:
+        
         ``` json title="Response - Status: 201 Created"
         {
             "data": {

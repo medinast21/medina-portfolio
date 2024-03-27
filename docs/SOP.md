@@ -3,8 +3,8 @@
 ## Installing and Configuring the Act! Web API Database Connection
 
 ### Overview
-When a client has requested to have the Act! Web API configured for use with Act! Marketing Automation, Act!
-Premium accessed via web, or 3rd-party connections, you will need to create a secure connection from their Act! database to the cloud API endpoint.
+When a client has requested to have the Act! Web API configured for use with Act! Marketing Automation (AMA), Act!
+Premium accessed via web (APFW), or 3rd-party connections, you will need to create a secure connection from their Act! database to the cloud API endpoint.
 
 You have two options for creating this connection for an Act! database:
 
@@ -213,11 +213,15 @@ connections.
 We can test our Act! configuration by utilizing the local file directories that have been configured in IIS.
 
 1. Open a web browser and browse to these two URLs:
+
     * `localhost/apfw`
     * `localhost/act.web.api`
 
 2. If the Website Administration tasks have been configured successfully, these two options will return the expected
-webpages: the login for the Act! database and the Act! web API help documentation page.
+webpages: 
+
+    * the login for the Act! database
+    * the Act! web API help documentation page
 
 3. If the local sites load properly, but the domain sites (using the SSL certificate) do not, then something is being
 blocked regarding the SSL certificate domain or https port (443).
@@ -228,7 +232,8 @@ somewhere, or the firewall is blocking portions of the Act! application from run
 ### Adding Act! Web API to a Act! Premium (non-web) installation
 If the client's server / host machine is not using Act! Premium for Web (APFW), you will not be able to run an SSL
 certificate configuration for API connectivity.
-In order to successfully bind an SSL certificate to an Act! database, you need to install Act! Premium for Web. The
-APFW installation process creates the necessary virtual directories in IIS that are used with an SSL certificate.
+
+In order to successfully bind an SSL certificate to an Act! database, you need to install Act! Premium for Web. The APFW installation process creates the necessary virtual directories in IIS that are used with an SSL certificate.
+
 Clients can still create an API connection for their non-web Act! database by installing and configuring the Act!
 Connect Link software on the server / host machine.

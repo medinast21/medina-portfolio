@@ -134,26 +134,26 @@ proper domain name.
 #### Configuring IIS once the SSL certificate has been installed
 Once IT has installed the SSL certificate on the host machine, you are ready to configure the API endpoint URL.
 
-1. Make sure the certificate is bound to the https port (443) in the IIS menu.
+To start, make sure the certificate is bound to the https port (443) in the IIS menu.
 
-2. To open the IIS menu, click the Windows Start button and type "IIS".
+1. To open the IIS menu, click the Windows Start button and type "IIS".
 
-3. Click on Internet Information Services (IIS) Manager to launch the interface.
+2. Click on Internet Information Services (IIS) Manager to launch the interface.
 
     !!! note
             Do not click on Internet Information Services (IIS) 6.0 Manager.
 
-4. In the Connections pane located in the left-hand column, expand each line until Default Website becomes visible.
+3. In the **Connections** pane located in the left-hand column, expand each line until **Default Website** becomes visible.
 
-5. Click on Default Website to select it.
+4. Click on **Default Website** to select it.
 
-6. In the Actions pane in the right-hand column, click Bindings under Edit Site.
+5. In the **Actions** pane in the right-hand column, click **Bindings** under **Edit Site**.
 
-7. If there is no https binding added, click the **Add...** button to create a new site binding.
+6. If there is no https binding added, click the **Add...** button to create a new site binding.
 
-8. Click the **Type** dropdown menu and choose **https**.
+7. Click the **Type** dropdown menu and choose **https**.
 
-9. Click the **SSL certificate** dropdown menu to select the appropriate SSL certificate that was installed by IT.
+8. Click the **SSL certificate** dropdown menu to select the appropriate SSL certificate that was installed by IT.
 
 You should not need to change any other values for this binding if the SSL certificate was installed properly.
 

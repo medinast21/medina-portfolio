@@ -53,7 +53,7 @@ options.
 
 ![Connect Link URL Displayed](assets/ConnectLink_URL.PNG)
 
-!!! note
+!!! warning
         The API URL should be updated in the configuration file in the Act! program folders automatically,
         but occasionally it does not get set properly. If this happens, you will need to use the GetSetCloudAPIURL.bat file
         found in the JWT token error KB article to set the value manually.
@@ -104,7 +104,7 @@ This will create a new endpoint / tenant for the Act! database and can help reso
 
 Because this changes the API URL value, you may need to update the API URL for the database using the GetSetCloudAPIURL.bat file in the JWT token error [KB article](https://help.act.com/hc/en-us/articles/360024432273-Error-Invalid-JWT-Token-when-accessing-Act-Marketing-Automation).
 
-!!! note
+!!! warning
         Uninstalling & reinstalling Connect Link will create a new Connect Link API web URL. If a client is using
         Connect Link for connections other than AMA (Act! Companion Mobile App, Zapier.com, etc.), they will need to be
         notified to update their login credentials URL in those other programs.

@@ -42,10 +42,10 @@ Technical writing has become a true passion of mine. This is largely because:
 
 ### Personal details
 
-* I currently work remotely in New Mexico with my fiance who works at the Los Alamos National Laboratory.
+* I currently work remotely in New Mexico with my fiance.
 * We have a 3-year-old Goldendoodle named Maisie who we love quite a bit.
 * I love outdoor recreation and am very active.
     * I completed a 400-mile bikepacking loop around Scotland in September of 2023 with a group of friends.
     * I completed a 50-mile backpacking trip along the Bechler River in Yellowstone National Park in 2021.
-    * I grew up snowboarding, but taught myself to ski while working at the resort.
+    * I grew up snowboarding, but taught myself to ski while working for Telluride Ski Resort.
     * I played roller and ice hockey throughout high school and college and my favorite NHL team is the Avalanche!

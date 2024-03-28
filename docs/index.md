@@ -9,8 +9,8 @@ This website was built using Python, MkDocs, and various extensions and plug-ins
 
 
 ## Portfolio Links
-* [Technical: Data Availability via Snowflake](DataAvailability_Snowflake.md)
-* [Technical: Authentication Bridge Service](AuthBridgeService.md)
+* [Technical 1: Data Availability via Snowflake](DataAvailability_Snowflake.md)
+* [Technical 2: Authentication Bridge Service](AuthBridgeService.md)
 * [SOP: Installing and Configuring the Act! Web API Database Connection](Act_ConnectLink_Install.md)
 * [Editing: Mountain Technology Symposium Newsletter](MTS_Newsletter_Edits.md)
 * [Proposal: Changing software and hardware for the Retail department](EZLinks_Capital_Proposal.md)

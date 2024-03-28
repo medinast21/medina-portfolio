@@ -96,9 +96,9 @@ to try uninstalling and reinstalling the software.
 
 1. Open the installed programs list for the machine in question and uninstall the Connect Link software.
 
-2. Once the uninstall process finishes, navigate to the C: drive and delete the ActConnectLink folder.
+2. Once the uninstall process finishes, navigate to the C: drive folder (or whatever the root drive may be) and delete the ActConnectLink folder.
 
-3. Reinstall the Connect Link software by running the installer file again.
+3. Reinstall the Connect Link software by running the installer file.
 
 This will create a new endpoint / tenant for the Act! database and can help resolve some connectivity issues.
 

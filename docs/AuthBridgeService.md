@@ -10,7 +10,7 @@ A successful authentication will provide the client access to the Velocity data 
 
 #### What the client provides to Nelnet
 * The public key from a public/private keyset created using the RSA algorithm that is ideally 4096 bits in size (typically the client can request this
-from the client's IT department).
+from the client's IT department)
     * 4096 bits is the target size because larger key sizes will be processed more slowly by the system.
     * The public key created as part of the keyset should be given to Nelnet. Do not give Nelnet the private key.
 * A JWT minted and signed with the private key from the keyset created that includes the client's Velocity BorrowerId value (GUID)
@@ -57,12 +57,12 @@ from the client's IT department).
     * Authorization: The JWT that was generated from Step 4.
     * Bridge-Key: The bridge key value provided by Nelnet.
 
-        ``` c hl_lines="1 3 4" title="cURL"
-            curl -L -X POST 'https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate' \
-            -H 'Content-Type: application/json' \
-            -H 'Authorization: Bearer <CLIENT.TOKEN>' \
-            -H 'Bridge-Key: <CLIENT.BRIDGEKEY>'
-        ```
+    ``` c hl_lines="1 3 4" title="cURL"
+        curl -L -X POST 'https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate' \
+        -H 'Content-Type: application/json' \
+        -H 'Authorization: Bearer <CLIENT.TOKEN>' \
+        -H 'Bridge-Key: <CLIENT.BRIDGEKEY>'
+    ```
 
 6. A successful request returns a JSON payload including the data shown in the example here:
         

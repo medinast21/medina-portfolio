@@ -18,7 +18,7 @@ from the client's IT department)
 
 #### What Nelnet provides to the client
 * Nelnet creates the authentication bridge records and sends the bridge key to the client.
-* The bridge authentication endpoint URL: `https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate`
+* The bridge authentication endpoint URL: `https://<ENV>.nelnet.io/authbridgeapi/auth-bridge/authenticate`
     * Depending on the environment, replace the `<ENV>` with the value provided for a specific environment.
 
 ### Process requirements
@@ -47,7 +47,7 @@ from the client's IT department)
         {
             "velocityBorrowerId": "9d4b59f3-86a3-42f6-8f3e-50272f85d01c",
             "sub": "a867824d-58c3-4992-9926-ee9f423e8a93",
-            "scp": "api_borrower",
+            "scp": "borrower",
             "iat": 1567550002,
             "exp": 1583328478
         }
@@ -58,7 +58,7 @@ from the client's IT department)
     * Bridge-Key: The bridge key value provided by Nelnet.
 
     ``` c hl_lines="1 3 4" title="cURL"
-        curl -L -X POST 'https://<ENV>.nelnet.io/authenticationbridgeapi/authentication-bridge/authenticate' \
+        curl -L -X POST 'https://<ENV>.nelnet.io/authbridgeapi/auth-bridge/authenticate' \
         -H 'Content-Type: application/json' \
         -H 'Authorization: Bearer <CLIENT.TOKEN>' \
         -H 'Bridge-Key: <CLIENT.BRIDGEKEY>'

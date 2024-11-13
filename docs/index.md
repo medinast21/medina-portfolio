@@ -1,6 +1,6 @@
 # Home
 
-Hey! Thanks for visiting my portfolio. This website houses a curated collection of technical writing/editing projects that I have worked on over the course of my career. If you would like to contact me with job opportunities or just have general questions, feel free to use the social media links in the lower-right corner to find me.
+Hey! Thanks for visiting my portfolio. This website houses a curated collection of technical writing/editing projects that I have worked on over the course of my career. If you would like to contact me with job opportunities or just have general questions, feel free to use the Github and LinkedIn icons in the lower-right corner to find me.
 
 This website was built using Python, MkDocs, and various extensions and plug-ins, and is currently hosted on GitHub Pages. All content has been created using a combination of Markdown, HTML, and CSS.
 

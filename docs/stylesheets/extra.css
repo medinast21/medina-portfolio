@@ -1,0 +1,74 @@
+/* ============================================
+   Seth Medina Portfolio - Custom Styles
+   ============================================ */
+
+
+/* --- Homepage intro paragraph --- */
+/* Makes the opening paragraph on the home page stand out visually */
+.md-content article > p:first-of-type {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    border-left: 4px solid var(--md-primary-fg-color);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--md-typeset-color);
+}
+
+
+/* --- Portfolio link hover effect --- */
+/* Adds a subtle left-shift and color change on hover for list links */
+.md-content ul li a {
+    transition: padding-left 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.md-content ul li a:hover {
+    padding-left: 6px;
+    color: var(--md-accent-fg-color);
+}
+
+
+/* --- Page h1 styling --- */
+/* Makes the top-level page title larger and adds a bottom border for separation */
+.md-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--md-primary-fg-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.25rem;
+}
+
+
+/* --- Section h2 styling --- */
+/* Gives h2 headings a slightly accented color to break up long pages */
+.md-content h2 {
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+/* --- Light mode h2 overrides --- */
+[data-md-color-scheme="default"] .md-content h2 {
+    color: var(--md-primary-fg-color--dark);
+}
+
+
+/* --- Dark mode h2 overrides --- */
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: var(--md-accent-fg-color);
+}
+
+
+/* --- Navigation link hover --- */
+/* Subtle accent color on nav item hover */
+.md-nav__link:hover {
+    color: var(--md-accent-fg-color);
+    transition: color 0.15s ease;
+}
+
+
+/* --- Footer refinement --- */
+/* Slightly increases footer spacing for breathing room */
+.md-footer {
+    margin-top: 2rem;
+}

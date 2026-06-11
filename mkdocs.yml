@@ -12,28 +12,31 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
+  font:
+    text: Lato
+    code: Roboto Mono
   palette:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: teal
-      accent: purple
+      primary: blue-grey
+      accent: cyan
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: teal
-      accent: lime
+      primary: blue-grey
+      accent: cyan
 
 nav:
-    - 'index.md'
-    - 'DataAvailability_Snowflake.md'
-    - 'AuthBridgeService.md'
-    - 'Act_ConnectLink_Install.md'
-    - 'MTS_Newsletter_Edits.md'
-    - 'EZLinks_Capital_Proposal.md'
-    - 'AboutMe.md'
+    - Home: index.md
+    - Data Availability (Snowflake): DataAvailability_Snowflake.md
+    - AuthBridge Service: AuthBridgeService.md
+    - ConnectLink Installation: Act_ConnectLink_Install.md
+    - Newsletter Editing: MTS_Newsletter_Edits.md
+    - Capital Proposal: EZLinks_Capital_Proposal.md
+    - About Me: AboutMe.md
 
 extra:
     social:

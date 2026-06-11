@@ -63,4 +63,4 @@ markdown_extensions:
 plugins:
 
 copyright: |
-  &copy; 2024 <a href="https://linkedin.com/in/sethtmedina" target="_blank" rel="noopener">Seth Medina</a>
+  &copy; {YEAR} <a href="https://linkedin.com/in/sethtmedina" target="_blank" rel="noopener">Seth Medina</a>

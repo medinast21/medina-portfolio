@@ -1,7 +1,5 @@
 # About Me
 
-Thanks for checking out my portfolio site!
-
 [//]: # (Internal styling for the portrait image)
 <style>
 
@@ -18,36 +16,33 @@ img {
 
 ![Seth Medina](assets/SethPortrait(300x300).png)
 
-My name is Seth Medina and I've been a big fan of computers and technology since the 1st grade when my mom brought home a shiny new desktop computer. While she was using it to peruse the (new-to-the-world) Internet for new houses, I was excited to try out all of the video games that were being planted in the boxes of my favorite breakfast cereals (anyone remember Chex Quest?). My love for computers and tech has only grown over the course of my life.
+I'm Seth Medina, an IT Business Analyst / Technical Writer at Nelnet Diversified Services (NDS), a division of Nelnet. I maintain and advocate for a large internal knowledge base of technical information, embedded across 6 development teams (each with developers, QAs, business analysts, and product owners) working in two-week sprints.
 
-I currently work as an IT Business Analyst / Technical Writer for a division of Nelnet, the consumer loan finance company that might service your student loans (and mine). In this role, I am responsible for maintaining, updating, and advocating for the large internal knowledge base of technical information that is used by our business stakeholders. This means I work with cross-functional teams of developers, business analysts, and product owners during our two-week sprints, and I track the work being done using Jira. I am responsible for capturing technical information from 3 different teams covering specific areas of the product and work to incorporate any major changes in system functionality into the various areas of documentation that my team maintains.
+My documentation responsibilities span:
 
-These areas include:
+* an internal knowledge base of system feature functionality summaries for business stakeholders, maintained in Confluence
+* an API reference site maintained using a docs-as-code approach with a static site generator
+* three separate user guides for our different user portals
+* AI-assisted documentation workflows, including Claude skill pipelines that automate large portions of these responsibilities via MCP servers integrated with tools like Jira, Confluence, and GitLab
 
-* a Confluence knowledge base
-* an API reference website (maintained using a docs-as-code approach with a static site generator)
-* three separate user guides for the different user portals
-* a large spreadsheet file containing the relationships between data elements and the various reporting views created in Snowflake
+### Background
 
-My background is a unique blend of various writing positions and roles in the world of Information Technology. In my early roles in IT, I worked in very hands-on environments, installing and configuring software across client computing environments and helping fix things when they went wrong. These were primarily software that used SQL database engines, so I became very familiar with databases and their tooling. Prior to my endeavors in IT, I worked as a writer for various companies in the social media and search engine spaces. These roles helped shape my ability to write for different audiences and understand how to get in the shoes of the reader.
+My path to technical writing runs through hands-on IT work, installing, configuring, and troubleshooting software (primarily SQL-based systems) across client environments. From there I moved into writing roles in the social media and search engine industries. That combination shaped how I approach documentation: I can navigate the systems directly, not just document what someone else explains to me, and I write with the reader's context in mind.
 
-In most places I've worked, documentation was an afterthought, meaning I've had the opportunity to help build team processes and best practices for efficiently completing the various tasks associated with documentation. This also means that I've continuously advocated for users and internal stakeholders who would benefit greatly from having quality documentation at their fingertips.
+In most places I've worked, documentation was an afterthought. That's given me the chance to build team processes and best practices around it from the ground up, and to advocate for the stakeholders who benefit most from having accurate, accessible information.
 
-Technical writing and Information Technology have become true passions of mine. This is largely because:
+### Education
 
-* I love learning about complex topics and ideas.
-* I love helping others accomplish their goals and projects.
-* I love the technology and tooling involved with modern technical writing workflows.
-* I love problem solving.
-* I love organizing information and designing documents.
-* I love words and language.
+* B.S. in Journalism and Mass Communications, University of Colorado, Boulder
+* M.S. in Project Management *(in progress)*, Colorado Technical University
 
-### Personal details
+### What drives me
 
-* I currently work remotely in New Mexico with my fiance.
-* We have a 3-year-old dog named Maisie who we love quite a bit.
-* I love outdoor recreation and am very active.
-    * I completed a 400-mile bikepacking loop around Scotland in September of 2023 with a group of friends.
-    * I completed a 50-mile backpacking trip along the Bechler River in Yellowstone National Park in 2021.
-    * I grew up snowboarding, but taught myself to ski while working for Telluride Ski Resort.
-    * I played roller and ice hockey throughout high school and college and my favorite NHL team is the Avalanche!
+* Learning complex systems and translating them into clear documentation
+* Building documentation processes that teams actually use
+* Working with modern docs-as-code tooling and workflows, including applied AI tooling
+* Problem solving and organizing information for different audiences
+
+---
+
+Outside of work, I'm based in New Mexico. You'll usually find me out hiking, skiing, or biking with my wife and our dog Maisie.

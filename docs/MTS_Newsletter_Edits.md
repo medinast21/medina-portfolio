@@ -1,4 +1,4 @@
-# Editing
+# Editorial Sample
 
 This newsletter was written by a colleague for a conference that our organization sponsored. 
 

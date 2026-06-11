@@ -1,4 +1,4 @@
-# Proposal
+# Business Proposal
 
 ## Capital Expense Project Proposal
 

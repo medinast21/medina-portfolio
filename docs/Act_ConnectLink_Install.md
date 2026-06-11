@@ -1,4 +1,4 @@
-# SOP
+# Installation & Configuration Guide
 
 ## Installing and Configuring the Act! Web API Database Connection
 

@@ -1,4 +1,4 @@
-# Technical 2
+# API / Developer Doc
 
 ## Authentication Bridge Service - Client Doc
 

@@ -31,11 +31,11 @@ theme:
 
 nav:
     - Home: index.md
-    - Data Availability (Snowflake): DataAvailability_Snowflake.md
-    - AuthBridge Service: AuthBridgeService.md
-    - ConnectLink Installation: Act_ConnectLink_Install.md
-    - Newsletter Editing: MTS_Newsletter_Edits.md
-    - Capital Proposal: EZLinks_Capital_Proposal.md
+    - Technical Reference: DataAvailability_Snowflake.md
+    - API / Developer Doc: AuthBridgeService.md
+    - Installation & Configuration Guide: Act_ConnectLink_Install.md
+    - Editorial Sample: MTS_Newsletter_Edits.md
+    - Business Proposal: EZLinks_Capital_Proposal.md
     - About Me: AboutMe.md
 
 extra:

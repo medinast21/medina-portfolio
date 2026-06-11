@@ -1,4 +1,4 @@
-# Technical 1
+# Technical Reference
 
 ## Data Availability via Snowflake
 

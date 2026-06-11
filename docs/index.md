@@ -1,18 +1,15 @@
 # Home
 
-Hey, thanks for visiting my portfolio. This website houses a curated collection of technical writing/editing projects that I have worked on over the course of my career. If you would like to contact me with job opportunities or just have general questions, feel free to use the Github and LinkedIn icons in the lower-right corner to find me.
-
-This website was built using Python, MkDocs, and various extensions and plug-ins, and is currently hosted on GitHub Pages. All content has been created using a combination of Markdown, HTML, and CSS.
+This portfolio is a curated collection of technical writing samples from across my career, built using MkDocs and hosted on GitHub Pages as an example of a docs-as-code workflow. To get in touch about job opportunities or general questions, use the GitHub and LinkedIn icons in the footer.
 
 !!! tip
-        Click the toggle button to the left of the search bar above to swap between light and dark mode!
+        Use the toggle in the header to swap between light and dark mode.
 
+## Portfolio
 
-## Portfolio Links
-* [Technical 1: Data Availability via Snowflake](DataAvailability_Snowflake.md)
-* [Technical 2: Authentication Bridge Service](AuthBridgeService.md)
-* [SOP: Installing and Configuring the Act! Web API Database Connection](Act_ConnectLink_Install.md)
-* [Editing: Mountain Technology Symposium Newsletter](MTS_Newsletter_Edits.md)
-* [Proposal: Changing software and hardware for the Retail department](EZLinks_Capital_Proposal.md)
-* [Nelnet API Reference Documentation](https://docs.nelnet.io/#introduction) (a docs-as-code approach to API reference documentation. My team currently maintains and updates this site based on API/feature enhancements that affect the endpoints that our customers may use.)
-* [About Me](AboutMe.md)
+* [Technical Reference: Data Availability via Snowflake](DataAvailability_Snowflake.md)
+* [API / Developer Doc: Authentication Bridge Service](AuthBridgeService.md)
+* [Installation & Configuration Guide: Installing and Configuring the Act! Web API Database Connection](Act_ConnectLink_Install.md)
+* [Editorial Sample: Mountain Technology Symposium Newsletter](MTS_Newsletter_Edits.md)
+* [Business Proposal: Changing software and hardware for the Retail department](EZLinks_Capital_Proposal.md)
+* [Nelnet API Reference Documentation](https://docs.nelnet.io/#introduction) — a live external example of a docs-as-code API reference site maintained by my team.

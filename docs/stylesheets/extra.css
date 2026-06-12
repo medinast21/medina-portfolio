@@ -3,6 +3,21 @@
    ============================================ */
 
 
+/* --- True black header and nav override --- */
+/* Forces the header and nav sidebar to true black in both light and dark mode */
+.md-header {
+    background-color: #000000 !important;
+}
+
+.md-tabs {
+    background-color: #000000 !important;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__title {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
 /* --- Homepage intro paragraph --- */
 /* Makes the opening paragraph on the home page stand out visually */
 .md-content article > p:first-of-type {

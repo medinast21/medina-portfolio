@@ -86,10 +86,10 @@
     --md-default-bg-color--lighter: #31363F;
     --md-default-bg-color--lightest: #31363F;
     --md-default-fg-color: #EEEEEE;
-    --md-default-fg-color--light: #76ABAE;
-    --md-default-fg-color--lighter: #76ABAE;
+    --md-default-fg-color--light: #89B4CC;
+    --md-default-fg-color--lighter: #89B4CC;
     --md-typeset-color: #EEEEEE;
-    --md-typeset-a-color: #76ABAE;
+    --md-typeset-a-color: #89B4CC;
 }
 
 /* --- Dark mode header --- */
@@ -112,7 +112,7 @@
 }
 
 [data-md-color-scheme="slate"] .md-nav__link {
-    color: #76ABAE;
+    color: #89B4CC;
 }
 
 [data-md-color-scheme="slate"] .md-nav__link:hover {
@@ -132,17 +132,17 @@
 
 /* --- Dark mode h1 border --- */
 [data-md-color-scheme="slate"] .md-content h1 {
-    border-bottom-color: #76ABAE;
+    border-bottom-color: #89B4CC;
 }
 
 /* --- Dark mode h2 color --- */
 [data-md-color-scheme="slate"] .md-content h2 {
-    color: #76ABAE;
+    color: #89B4CC;
 }
 
 /* --- Dark mode intro paragraph border --- */
 [data-md-color-scheme="slate"] .md-content article > p:first-of-type {
-    border-left-color: #76ABAE;
+    border-left-color: #89B4CC;
 }
 
 /* --- Dark mode link hover in content --- */
@@ -153,7 +153,7 @@
 /* --- Dark mode footer --- */
 [data-md-color-scheme="slate"] .md-footer {
     background-color: #222831;
-    color: #76ABAE;
+    color: #89B4CC;
 }
 
 [data-md-color-scheme="slate"] .md-footer-meta {
@@ -175,7 +175,7 @@
 }
 
 [data-md-color-scheme="slate"] .md-search__input::placeholder {
-    color: #76ABAE;
+    color: #89B4CC;
 }
 
 

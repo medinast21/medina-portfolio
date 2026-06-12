@@ -34,7 +34,7 @@ In most places I've worked, documentation was an afterthought. That's given me t
 ### Education
 
 * B.S. in Journalism and Mass Communications, University of Colorado, Boulder
-* M.S. in Project Management *(in progress)*, Colorado Technical University
+* M.S. in Management - Project Management *(in progress)*, Colorado Technical University
 
 ### What drives me
 

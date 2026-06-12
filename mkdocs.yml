@@ -5,7 +5,8 @@ theme:
     - navigation.tabs
     - navigation.sections
     - toc.integrate
-    - navigate.top
+    - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link

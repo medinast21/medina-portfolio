@@ -81,101 +81,101 @@
 
 /* --- Dark mode background layers --- */
 [data-md-color-scheme="slate"] {
-    --md-default-bg-color: #1a2a38;
-    --md-default-bg-color--light: #1a2a38;
-    --md-default-bg-color--lighter: #1a2a38;
-    --md-default-bg-color--lightest: #1a2a38;
-    --md-default-fg-color: #DDE6ED;
-    --md-default-fg-color--light: #9DB2BF;
-    --md-default-fg-color--lighter: #526D82;
-    --md-typeset-color: #DDE6ED;
-    --md-typeset-a-color: #9DB2BF;
+    --md-default-bg-color: #31363F;
+    --md-default-bg-color--light: #31363F;
+    --md-default-bg-color--lighter: #31363F;
+    --md-default-bg-color--lightest: #31363F;
+    --md-default-fg-color: #EEEEEE;
+    --md-default-fg-color--light: #76ABAE;
+    --md-default-fg-color--lighter: #76ABAE;
+    --md-typeset-color: #EEEEEE;
+    --md-typeset-a-color: #76ABAE;
 }
 
 /* --- Dark mode header --- */
 [data-md-color-scheme="slate"] .md-header {
-    background-color: #27374D !important;
+    background-color: #222831 !important;
 }
 
 /* --- Dark mode tabs --- */
 [data-md-color-scheme="slate"] .md-tabs {
-    background-color: #27374D !important;
+    background-color: #222831 !important;
 }
 
 /* --- Dark mode sidebar and nav --- */
 [data-md-color-scheme="slate"] .md-sidebar {
-    background-color: #1a2a38;
+    background-color: #31363F;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
-    background-color: #1a2a38;
+    background-color: #31363F;
 }
 
 [data-md-color-scheme="slate"] .md-nav__link {
-    color: #9DB2BF;
+    color: #76ABAE;
 }
 
 [data-md-color-scheme="slate"] .md-nav__link:hover {
-    color: #DDE6ED;
+    color: #EEEEEE;
 }
 
 [data-md-color-scheme="slate"] .md-nav__link--active {
-    color: #DDE6ED;
+    color: #EEEEEE;
     font-weight: 600;
 }
 
 /* --- Dark mode nav title --- */
 [data-md-color-scheme="slate"] .md-nav--primary .md-nav__title {
-    background-color: #1a2a38 !important;
-    color: #DDE6ED !important;
+    background-color: #222831 !important;
+    color: #EEEEEE !important;
 }
 
 /* --- Dark mode h1 border --- */
 [data-md-color-scheme="slate"] .md-content h1 {
-    border-bottom-color: #526D82;
+    border-bottom-color: #76ABAE;
 }
 
 /* --- Dark mode h2 color --- */
 [data-md-color-scheme="slate"] .md-content h2 {
-    color: #9DB2BF;
+    color: #76ABAE;
 }
 
 /* --- Dark mode intro paragraph border --- */
 [data-md-color-scheme="slate"] .md-content article > p:first-of-type {
-    border-left-color: #526D82;
+    border-left-color: #76ABAE;
 }
 
 /* --- Dark mode link hover in content --- */
 [data-md-color-scheme="slate"] .md-content a:hover {
-    color: #DDE6ED;
+    color: #EEEEEE;
 }
 
 /* --- Dark mode footer --- */
 [data-md-color-scheme="slate"] .md-footer {
-    background-color: #27374D;
-    color: #9DB2BF;
+    background-color: #222831;
+    color: #76ABAE;
 }
 
 [data-md-color-scheme="slate"] .md-footer-meta {
-    background-color: #27374D;
+    background-color: #222831;
 }
 
 /* --- Dark mode list link hover --- */
 [data-md-color-scheme="slate"] .md-content ul li a:hover {
-    color: #DDE6ED;
+    color: #EEEEEE;
 }
 
 /* --- Dark mode search --- */
 [data-md-color-scheme="slate"] .md-search__form {
-    background-color: #526D82;
+    background-color: #222831;
 }
 
 [data-md-color-scheme="slate"] .md-search__input {
-    color: #DDE6ED;
+    color: #EEEEEE;
 }
 
 [data-md-color-scheme="slate"] .md-search__input::placeholder {
-    color: #9DB2BF;
+    color: #76ABAE;
 }
 
 

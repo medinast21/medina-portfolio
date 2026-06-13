@@ -4,7 +4,7 @@ This document was created at the request of a director who wanted a holistic pic
 
 !!! note "A note on terminology"
         Velocity is the internal name for the company's loan servicing platform.
-        
+
         All references to specific database names and URLs in this document have been anonymized for portfolio purposes.
 
 ## What is Snowflake?
@@ -16,7 +16,11 @@ The Data Availability Team (DAT) uses a tool called DBT to create different "vie
 Snowflake also serves as a data warehouse for entities beyond Velocity, meaning it contains data not maintained by the DAT. Users looking for information in those areas will need to contact the owner of the specific space.
 
 !!! info "Data before Snowflake"
-        Velocity launched in 2019 and Snowflake became the preferred data warehouse in 2021. Due to this timeline, approximately 1.5 years of Velocity data does not exist in Snowflake. An older RDS environment (Redshift Postgres) that acted as a temporary solution prior to adopting Snowflake is still active and houses this earlier data. The earliest records in Snowflake have a timestamp of around March 2021.
+        Velocity launched in 2019 and Snowflake became the preferred data warehouse in 2021. 
+
+        Due to this timeline, approximately 1.5 years of Velocity data does not exist in Snowflake. 
+        
+        An older RDS environment (Redshift Postgres) that acted as a temporary solution prior to adopting Snowflake is still active and houses this earlier data. The earliest records in Snowflake have a timestamp of around March 2021.
 
 ## What is DBT?
 
@@ -51,7 +55,9 @@ The URLs for each instance are:
 Not all data in Velocity is available in Snowflake. This is either because older data elements were never added to views, or because newly developed elements have not yet been included.
 
 !!! info
-        The views in Snowflake are non-materialized, meaning each view re-runs the SQL query that generates it and displays current data when called. Views are necessary because users need access to the data without direct access to the underlying tables.
+        The views in Snowflake are non-materialized, meaning each view re-runs the SQL query that generates it and displays current data when called. 
+        
+        Views are necessary because users need access to the data without direct access to the underlying tables.
 
 The different types of views currently available in Snowflake for the XYZ database are:
 

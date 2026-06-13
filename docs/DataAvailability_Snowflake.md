@@ -3,7 +3,8 @@
 This document was created at the request of a director who wanted a holistic picture of how the team's tools and systems integrated with one another. It was written for an internal audience of both technical and non-technical business stakeholders who needed a shared reference for how data flows through the team's Snowflake-based infrastructure.
 
 !!! note "A note on terminology"
-        Velocity is the internal name for the company's loan servicing platform. All references to specific database names and URLs in this document have been anonymized for portfolio purposes.
+        Velocity is the internal name for the company's loan servicing platform.<br>
+        All references to specific database names and URLs in this document have been anonymized for portfolio purposes.
 
 ## What is Snowflake?
 

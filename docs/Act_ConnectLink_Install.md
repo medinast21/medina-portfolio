@@ -1,5 +1,7 @@
 # Installation & Configuration Guide
 
+This guide walks Act! consultants through two methods of configuring a secure database connection to the Act! cloud API endpoint. It was written for a technical audience with hands-on access to client server environments, covering both software installation and SSL certificate configuration.
+
 ## Installing and Configuring the Act! Web API Database Connection
 
 ### Overview

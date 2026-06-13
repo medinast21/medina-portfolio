@@ -1,8 +1,8 @@
 # Business Proposal
 
-## Capital Expense Project Proposal
+This proposal was written for the Information Systems department at a previous employer to make the case for replacing legacy point-of-sale software. It covers current pain points, cost estimates, and a narrative rationale for the proposed solution.
 
-This short document was created as part of a proposal from the Information Systems department to move away from one software and replace it with another. It covers the overall cost estimates, pros and cons for the project, current pain points, and a narrative explaining the objectives and reasoning for the proposed solution.
+## Capital Expense Project Proposal
 
 ### Retail EZLinks Capital Proposal
 

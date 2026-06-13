@@ -1,5 +1,7 @@
 # Technical Reference
 
+This document was created at the request of a director who wanted a holistic picture of how the team's tools and systems integrated with one another. It was written for an internal audience of both technical and non-technical business stakeholders who needed a shared reference for how data flows through the team's Snowflake-based infrastructure.
+
 ## Data Availability via Snowflake
 
 This technical document provides a high level understanding of the tooling and systems being used in the team's data analytics efforts and projects.

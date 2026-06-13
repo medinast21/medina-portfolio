@@ -1,5 +1,7 @@
 # API / Developer Doc
 
+This developer document covers the Authentication Bridge Service, an internal auth integration layer used by clients connecting to our platform. It was written to give both internal and external developers a clear reference for authentication flows, endpoints, and implementation requirements.
+
 ## Authentication Bridge Service - Client Doc
 
 ### Overview

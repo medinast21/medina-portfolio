@@ -1,0 +1,999 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../AuthBridgeService/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Technical Reference - Seth Medina - Technical Writer/Editor</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#technical-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Seth Medina - Technical Writer/Editor" class="md-header__button md-logo" aria-label="Seth Medina - Technical Writer/Editor" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Seth Medina - Technical Writer/Editor
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Technical Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Technical Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../AuthBridgeService/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API / Developer Doc
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Act_ConnectLink_Install/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation & Configuration Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../MTS_Newsletter_Edits/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Editorial Sample
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../EZLinks_Capital_Proposal/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Business Proposal
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../AboutMe/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About Me
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Seth Medina - Technical Writer/Editor" class="md-nav__button md-logo" aria-label="Seth Medina - Technical Writer/Editor" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Seth Medina - Technical Writer/Editor
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Snowflake?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-dbt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is DBT?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-data-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is the Data Dictionary?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#read-only-vs-full-access-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read-only vs. full access users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snowflake-views-and-table-refresh-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Snowflake views and table refresh times
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#touch-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch events
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The databases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The databases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abc_db-and-xyz_db" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ABC_DB and XYZ_DB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics_db" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ANALYTICS_DB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External data sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AuthBridgeService/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API / Developer Doc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Act_ConnectLink_Install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation & Configuration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MTS_Newsletter_Edits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editorial Sample
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EZLinks_Capital_Proposal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Proposal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AboutMe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About Me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="technical-reference">Technical Reference</h1>
+<p>This document was created at the request of a director who wanted a holistic picture of how the team's tools and systems integrated with one another. It was written for an internal audience of both technical and non-technical business stakeholders who needed a shared reference for how data flows through the team's Snowflake-based infrastructure.</p>
+<div class="admonition note">
+<p class="admonition-title">A note on terminology</p>
+<div class="highlight"><pre><span></span><code>Velocity is the internal name for the company&#39;s loan servicing platform.
+
+All references to specific database names and URLs in this document have been anonymized for portfolio purposes.
+</code></pre></div>
+</div>
+<h2 id="what-is-snowflake">What is Snowflake?</h2>
+<p>Snowflake is a cloud-based data warehouse that imports data from a collection of databases that exist in PostgreSQL (Postgres) using AWS Glue and a tool called Rivery. The Velocity platform is comprised of various microservices that all communicate using various APIs, and each microservice contains a collection of tables. Velocity has approximately 60 different microservices and corresponding databases in Postgres, which Snowflake can pull from to query and present data.</p>
+<p>The Data Availability Team (DAT) uses a tool called DBT to create different "views" within Snowflake. Each view is a SQL query structured by the DAT to display various data elements in ways that are useful for analysis. There are different types of Snowflake views, each with associated characteristics including how often the underlying tables are refreshed with new data.</p>
+<p>Snowflake also serves as a data warehouse for entities beyond Velocity, meaning it contains data not maintained by the DAT. Users looking for information in those areas will need to contact the owner of the specific space.</p>
+<div class="admonition info">
+<p class="admonition-title">Data before Snowflake</p>
+<div class="highlight"><pre><span></span><code>Velocity launched in 2019 and Snowflake became the preferred data warehouse in 2021.
+
+Due to this timeline, approximately 1.5 years of Velocity data does not exist in Snowflake.
+
+An older RDS environment (Redshift Postgres) that acted as a temporary solution prior to adopting Snowflake is still active and houses this earlier data. The earliest records in Snowflake have a timestamp of around March 2021.
+</code></pre></div>
+</div>
+<h2 id="what-is-dbt">What is DBT?</h2>
+<p>DBT is the development environment used by the Data Availability Team to create and manage Snowflake views. Each view used by Nelnet users in Snowflake is developed in DBT, which interfaces with GitHub to provide version control and collaboration features.</p>
+<p>DBT also acts as a data transformation tool, allowing users to take source data and model it in ways that materialize different views and tables. Its functionality goes beyond simply creating views. It also serves as the central location for all of the DAT's column-level documentation, which is added as the team works on new tickets and projects.</p>
+<p>To learn more about DBT, visit the <a href="https://docs.getdbt.com/">DBT website</a>.</p>
+<h2 id="what-is-the-data-dictionary">What is the Data Dictionary?</h2>
+<p>The Data Dictionary provides descriptions for all of the various data elements that exist within Velocity. For example, if a user queries one of the Velocity APIs and receives a JSON payload, the Data Dictionary can be used to look up each data element name and its description.</p>
+<p>The Data Dictionary currently exists in Excel spreadsheets, but efforts are underway to move it into a DBT repository. Doing so would centralize it for all users, allow descriptions to be updated in a live database, make it accessible directly within Snowflake, and allow DBT users to see the relationships between data elements and the views they appear in, or their lineage.</p>
+<h2 id="read-only-vs-full-access-users">Read-only vs. full access users</h2>
+<p>For security and licensing purposes, there are two Snowflake instances a user can log in to:</p>
+<ul>
+<li>Read-only</li>
+<li>Full access</li>
+</ul>
+<p>The role and permissions assigned to each user determine which instance they will primarily use. The main difference is that the full access instance makes more tables visible. Because full access licenses are more expensive, most users are given read-only access.</p>
+<p>The URLs for each instance are:</p>
+<ul>
+<li>Read-only: <code>https://xxxxxxxx.snowflakecomputing.com/</code></li>
+<li>Full access: <code>https://app.snowflake.com/us-west/xxxxxxxxx/</code></li>
+</ul>
+<h2 id="snowflake-views-and-table-refresh-times">Snowflake views and table refresh times</h2>
+<p>Not all data in Velocity is available in Snowflake. This is either because older data elements were never added to views, or because newly developed elements have not yet been included.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<div class="highlight"><pre><span></span><code>The views in Snowflake are non-materialized, meaning each view re-runs the SQL query that generates it and displays current data when called.
+
+Views are necessary because users need access to the data without direct access to the underlying tables.
+</code></pre></div>
+</div>
+<p>The different types of views currently available in Snowflake for the XYZ database are:</p>
+<table>
+<thead>
+<tr>
+<th>View Type / Name</th>
+<th>Scheduled table refresh times</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>(VW)</strong> View</td>
+<td>Financial data updates in near real-time.<br>Non-financial data updates during the scheduled refresh.<br><br><strong>Starts</strong>: 5:00a UTC / 11:00p CST<br><strong>Ends</strong>: 11:20a UTC / 5:20a CST</td>
+<td>Queries pulling data in near real-time as it changes in Velocity. Non-financial data changes (address, phone number, e-correspondence/SCRA status, etc.) only update during the morning refresh cycle.</td>
+</tr>
+<tr>
+<td><strong>(DS)</strong> Daily snapshot</td>
+<td><strong>Starts</strong>: 5:00a UTC / 11:00p CST<br><strong>Ends</strong>: 11:20a UTC / 5:20a CST</td>
+<td>Queries that snapshot data elements at a scheduled time. Data is accurate as of the last refresh. Built from AWS Glue (and Rivery) tables brought over nightly.</td>
+</tr>
+<tr>
+<td><strong>(RP)</strong> Reports</td>
+<td><strong>Starts</strong>: 5:00a UTC / 11:00p CST<br><strong>Ends</strong>: 11:20a UTC / 5:20a CST</td>
+<td>Reporting views built on top of VW and DS views.</td>
+</tr>
+<tr>
+<td><strong>(CRP)</strong> Citizens reports</td>
+<td><strong>Starts</strong>: 5:00a UTC / 11:00p CST<br><strong>Ends</strong>: 11:20a UTC / 5:20a CST</td>
+<td>Same as RP views, but specific to <em>Client</em>.</td>
+</tr>
+</tbody>
+</table>
+<p>The DAT is currently working on consolidating all table refresh times to a single refresh at 7:00a UTC using Rivery.</p>
+<p>Within the XYZ database there are two types of tables:</p>
+<ul>
+<li>One that refreshes in near real-time as new data comes into Velocity (a single broad table)</li>
+<li>All other tables, which refresh on a schedule starting at 11:00p CST and completing by 5:20a CST</li>
+</ul>
+<h2 id="touch-events">Touch events</h2>
+<p>Non-financial data changes, such as address updates, phone number changes, and boolean status changes, do not update automatically in VW views when changes are made in Velocity. These changes only appear after the morning refresh cycle.</p>
+<p>For situations where views need to be updated before the next scheduled refresh, special requests can be made to the Data Availability Team to push a Touch Event, which manually refreshes the relevant views.</p>
+<p>Scenarios that most commonly require touch events:</p>
+<ul>
+<li><strong>Investor transfers</strong> — A loan or group of loans has been transferred to a new investor and the views need to be manually refreshed.</li>
+<li><strong>Loans with a $0 balance still in repayment status</strong> — A known issue caused by the API occasionally failing to update these loan records appropriately. This touch event will be automated using Rivery and will eventually not require manual intervention.</li>
+</ul>
+<h2 id="the-databases">The databases</h2>
+<p>The two primary databases used in Snowflake are ABC_DB and ANALYTICS_DB, which contain all raw data. XYZ_DB is a separate database containing the views that sit on top of the raw data tables.</p>
+<h3 id="abc_db-and-xyz_db">ABC_DB and XYZ_DB</h3>
+<p>Raw Velocity data coming into Snowflake is stored in ABC_DB, while Snowflake views are stored in XYZ_DB. XYZ_DB has two schemas:</p>
+<ul>
+<li><strong>LENDER</strong> — for Velocity Servicing</li>
+<li><strong>ORIGINATIONS</strong> — for Velocity Originations</li>
+</ul>
+<p>The LENDER schema pulls data directly from the Postgres database. ORIGINATIONS views use a source file created by the Originations system, which is loaded into an AWS S3 bucket and picked up by Snowflake via the Snowpipe service. Changes are then loaded into the ORIGINATION_SOURCE table, which is used to create the Originations views.</p>
+<h3 id="analytics_db">ANALYTICS_DB</h3>
+<p>The ANALYTICS_DB database is used by the Analytics team and the Business for reporting purposes. A list of available reports can be found in the Reports folder of the ANALYTICS_DB database in Snowflake.</p>
+<h2 id="external-data-sources">External data sources</h2>
+<p>Snowflake Marketplace provides users with access to hundreds of data providers and thousands of ready-to-use data resources. Velocity and Analytics use a calendar data source to support date-driven reporting, specifically "Calendars for Financial and Analytics" provided by Mondo Analytics.</p>
+<p>This data source is installed on the four main Snowflake accounts:</p>
+<ul>
+<li>XYXYXCHCH (dev and train)</li>
+<li>YZYZWEWEW (prod)</li>
+<li>HGHGHGXXX (analytics reader train)</li>
+<li>FV12DCH (analytics reader prod)</li>
+</ul>
+<p>The calendar data is located in the FINANCIAL_CALENDARS database, PUBLIC schema, across all accounts.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../AuthBridgeService/" class="md-footer__link md-footer__link--next" aria-label="Next: API / Developer Doc">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                API / Developer Doc
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 <a href="https://linkedin.com/in/sethtmedina" target="_blank" rel="noopener">Seth Medina</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/medinast21" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/sethtmedina" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

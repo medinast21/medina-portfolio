@@ -1,0 +1,368 @@
+/* ============================================
+   Seth Medina Portfolio - Custom Styles
+   ============================================ */
+
+
+/* --- True black header and nav override --- */
+/* Forces the header and nav sidebar to true black in both light and dark mode */
+.md-header {
+    background-color: #000000 !important;
+}
+
+.md-tabs {
+    background-color: #000000 !important;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__title {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* --- Homepage intro paragraph --- */
+/* Makes the opening paragraph on the home page stand out visually */
+.md-content article > p:first-of-type {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    border-left: 4px solid var(--md-primary-fg-color);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--md-typeset-color);
+}
+
+
+/* --- Portfolio link hover effect --- */
+/* Adds a subtle left-shift and color change on hover for list links */
+.md-content ul li a {
+    transition: padding-left 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.md-content ul li a:hover {
+    padding-left: 6px;
+    color: var(--md-accent-fg-color);
+}
+
+
+/* --- Page h1 styling --- */
+/* Makes the top-level page title larger and adds a bottom border for separation */
+.md-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--md-primary-fg-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.25rem;
+}
+
+
+/* --- Section h2 styling --- */
+/* Gives h2 headings a slightly accented color to break up long pages */
+.md-content h2 {
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+/* --- Light mode h2 overrides --- */
+[data-md-color-scheme="default"] .md-content h2 {
+    color: var(--md-primary-fg-color--dark);
+}
+
+
+/* --- Dark mode h2 overrides --- */
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: var(--md-accent-fg-color);
+}
+
+
+/* ============================================
+   Dark Mode Palette Overrides
+   GitHub palette: #0d1117 / #161b22 / #30363d / #58a6ff / #8b949e / #e6edf3
+   ============================================ */
+
+/* --- Dark mode background layers --- */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #161b22;
+    --md-default-bg-color--light: #161b22;
+    --md-default-bg-color--lighter: #161b22;
+    --md-default-bg-color--lightest: #161b22;
+    --md-default-fg-color: #e6edf3;
+    --md-default-fg-color--light: #8b949e;
+    --md-default-fg-color--lighter: #8b949e;
+    --md-typeset-color: #e6edf3;
+    --md-typeset-a-color: #58a6ff;
+}
+
+/* --- Dark mode header --- */
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #0d1117 !important;
+}
+
+/* --- Dark mode tabs --- */
+[data-md-color-scheme="slate"] .md-tabs {
+    background-color: #0d1117 !important;
+}
+
+/* --- Dark mode sidebar and nav --- */
+[data-md-color-scheme="slate"] .md-sidebar {
+    background-color: #161b22;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+    background-color: #161b22;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+    color: #8b949e;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+    color: #e6edf3;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #58a6ff;
+    font-weight: 600;
+}
+
+/* --- Dark mode nav title --- */
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__title {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+}
+
+/* --- Dark mode h1 border --- */
+[data-md-color-scheme="slate"] .md-content h1 {
+    border-bottom-color: #30363d;
+}
+
+/* --- Dark mode h2 color --- */
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: #58a6ff;
+}
+
+/* --- Dark mode intro paragraph border --- */
+[data-md-color-scheme="slate"] .md-content article > p:first-of-type {
+    border-left-color: #58a6ff;
+}
+
+/* --- Dark mode link hover in content --- */
+[data-md-color-scheme="slate"] .md-content a:hover {
+    color: #e6edf3;
+}
+
+/* --- Dark mode footer --- */
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: #0d1117;
+    color: #8b949e;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+    background-color: #0d1117;
+}
+
+/* --- Dark mode list link hover --- */
+[data-md-color-scheme="slate"] .md-content ul li a:hover {
+    color: #e6edf3;
+}
+
+/* --- Dark mode search --- */
+[data-md-color-scheme="slate"] .md-search__form {
+    background-color: #0d1117;
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+    color: #e6edf3;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+    color: #8b949e;
+}
+
+
+/* --- Navigation link hover --- */
+/* Subtle accent color on nav item hover */
+.md-nav__link:hover {
+    color: var(--md-accent-fg-color);
+    transition: color 0.15s ease;
+}
+
+
+/* --- Footer refinement --- */
+/* Slightly increases footer spacing for breathing room */
+.md-footer {
+    margin-top: 2rem;
+}
+
+
+/* ============================================
+   Light Mode Admonition Overrides
+   GitHub light mode callout color set
+   ============================================ */
+
+/* --- Note (blue) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.note,
+[data-md-color-scheme="default"] .md-typeset details.note {
+    border-color: #0969da;
+}
+[data-md-color-scheme="default"] .md-typeset .note > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .note > summary {
+    background-color: rgba(9, 105, 218, 0.1);
+    color: #0969da;
+}
+[data-md-color-scheme="default"] .md-typeset .note > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .note > summary::before {
+    background-color: #0969da;
+}
+
+/* --- Tip (green) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.tip,
+[data-md-color-scheme="default"] .md-typeset details.tip {
+    border-color: #1a7f37;
+}
+[data-md-color-scheme="default"] .md-typeset .tip > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .tip > summary {
+    background-color: rgba(26, 127, 55, 0.1);
+    color: #1a7f37;
+}
+[data-md-color-scheme="default"] .md-typeset .tip > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .tip > summary::before {
+    background-color: #1a7f37;
+}
+
+/* --- Important (purple) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.important,
+[data-md-color-scheme="default"] .md-typeset details.important {
+    border-color: #8250df;
+}
+[data-md-color-scheme="default"] .md-typeset .important > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .important > summary {
+    background-color: rgba(130, 80, 223, 0.1);
+    color: #8250df;
+}
+[data-md-color-scheme="default"] .md-typeset .important > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .important > summary::before {
+    background-color: #8250df;
+}
+
+/* --- Warning (amber) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.warning,
+[data-md-color-scheme="default"] .md-typeset details.warning {
+    border-color: #9a6700;
+}
+[data-md-color-scheme="default"] .md-typeset .warning > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .warning > summary {
+    background-color: rgba(154, 103, 0, 0.1);
+    color: #9a6700;
+}
+[data-md-color-scheme="default"] .md-typeset .warning > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .warning > summary::before {
+    background-color: #9a6700;
+}
+
+/* --- Caution/Danger (red) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.danger,
+[data-md-color-scheme="default"] .md-typeset details.danger,
+[data-md-color-scheme="default"] .md-typeset .admonition.caution,
+[data-md-color-scheme="default"] .md-typeset details.caution {
+    border-color: #cf222e;
+}
+[data-md-color-scheme="default"] .md-typeset .danger > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .danger > summary,
+[data-md-color-scheme="default"] .md-typeset .caution > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .caution > summary {
+    background-color: rgba(207, 34, 46, 0.1);
+    color: #cf222e;
+}
+[data-md-color-scheme="default"] .md-typeset .danger > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .danger > summary::before,
+[data-md-color-scheme="default"] .md-typeset .caution > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .caution > summary::before {
+    background-color: #cf222e;
+}
+
+
+/* ============================================
+   Dark Mode Admonition Overrides
+   GitHub callout color set
+   ============================================ */
+
+/* --- Note (blue) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+    border-color: #58a6ff;
+}
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .note > summary {
+    background-color: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+}
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .note > summary::before {
+    background-color: #58a6ff;
+}
+
+/* --- Tip (green) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+    border-color: #3fb950;
+}
+[data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .tip > summary {
+    background-color: rgba(63, 185, 80, 0.1);
+    color: #3fb950;
+}
+[data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .tip > summary::before {
+    background-color: #3fb950;
+}
+
+/* --- Important (purple) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.important,
+[data-md-color-scheme="slate"] .md-typeset details.important {
+    border-color: #a371f7;
+}
+[data-md-color-scheme="slate"] .md-typeset .important > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .important > summary {
+    background-color: rgba(163, 113, 247, 0.1);
+    color: #a371f7;
+}
+[data-md-color-scheme="slate"] .md-typeset .important > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .important > summary::before {
+    background-color: #a371f7;
+}
+
+/* --- Warning (amber) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.warning,
+[data-md-color-scheme="slate"] .md-typeset details.warning {
+    border-color: #d29922;
+}
+[data-md-color-scheme="slate"] .md-typeset .warning > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .warning > summary {
+    background-color: rgba(210, 153, 34, 0.1);
+    color: #d29922;
+}
+[data-md-color-scheme="slate"] .md-typeset .warning > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .warning > summary::before {
+    background-color: #d29922;
+}
+
+/* --- Caution/Danger (red) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger,
+[data-md-color-scheme="slate"] .md-typeset details.danger,
+[data-md-color-scheme="slate"] .md-typeset .admonition.caution,
+[data-md-color-scheme="slate"] .md-typeset details.caution {
+    border-color: #f85149;
+}
+[data-md-color-scheme="slate"] .md-typeset .danger > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .danger > summary,
+[data-md-color-scheme="slate"] .md-typeset .caution > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .caution > summary {
+    background-color: rgba(248, 81, 73, 0.1);
+    color: #f85149;
+}
+[data-md-color-scheme="slate"] .md-typeset .danger > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .danger > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .caution > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .caution > summary::before {
+    background-color: #f85149;
+}

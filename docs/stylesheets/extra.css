@@ -192,3 +192,177 @@
 .md-footer {
     margin-top: 2rem;
 }
+
+
+/* ============================================
+   Light Mode Admonition Overrides
+   GitHub light mode callout color set
+   ============================================ */
+
+/* --- Note (blue) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.note,
+[data-md-color-scheme="default"] .md-typeset details.note {
+    border-color: #0969da;
+}
+[data-md-color-scheme="default"] .md-typeset .note > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .note > summary {
+    background-color: rgba(9, 105, 218, 0.1);
+    color: #0969da;
+}
+[data-md-color-scheme="default"] .md-typeset .note > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .note > summary::before {
+    background-color: #0969da;
+}
+
+/* --- Tip (green) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.tip,
+[data-md-color-scheme="default"] .md-typeset details.tip {
+    border-color: #1a7f37;
+}
+[data-md-color-scheme="default"] .md-typeset .tip > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .tip > summary {
+    background-color: rgba(26, 127, 55, 0.1);
+    color: #1a7f37;
+}
+[data-md-color-scheme="default"] .md-typeset .tip > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .tip > summary::before {
+    background-color: #1a7f37;
+}
+
+/* --- Important (purple) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.important,
+[data-md-color-scheme="default"] .md-typeset details.important {
+    border-color: #8250df;
+}
+[data-md-color-scheme="default"] .md-typeset .important > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .important > summary {
+    background-color: rgba(130, 80, 223, 0.1);
+    color: #8250df;
+}
+[data-md-color-scheme="default"] .md-typeset .important > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .important > summary::before {
+    background-color: #8250df;
+}
+
+/* --- Warning (amber) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.warning,
+[data-md-color-scheme="default"] .md-typeset details.warning {
+    border-color: #9a6700;
+}
+[data-md-color-scheme="default"] .md-typeset .warning > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .warning > summary {
+    background-color: rgba(154, 103, 0, 0.1);
+    color: #9a6700;
+}
+[data-md-color-scheme="default"] .md-typeset .warning > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .warning > summary::before {
+    background-color: #9a6700;
+}
+
+/* --- Caution/Danger (red) --- */
+[data-md-color-scheme="default"] .md-typeset .admonition.danger,
+[data-md-color-scheme="default"] .md-typeset details.danger,
+[data-md-color-scheme="default"] .md-typeset .admonition.caution,
+[data-md-color-scheme="default"] .md-typeset details.caution {
+    border-color: #cf222e;
+}
+[data-md-color-scheme="default"] .md-typeset .danger > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .danger > summary,
+[data-md-color-scheme="default"] .md-typeset .caution > .admonition-title,
+[data-md-color-scheme="default"] .md-typeset .caution > summary {
+    background-color: rgba(207, 34, 46, 0.1);
+    color: #cf222e;
+}
+[data-md-color-scheme="default"] .md-typeset .danger > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .danger > summary::before,
+[data-md-color-scheme="default"] .md-typeset .caution > .admonition-title::before,
+[data-md-color-scheme="default"] .md-typeset .caution > summary::before {
+    background-color: #cf222e;
+}
+
+
+/* ============================================
+   Dark Mode Admonition Overrides
+   GitHub callout color set
+   ============================================ */
+
+/* --- Note (blue) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+    border-color: #58a6ff;
+}
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .note > summary {
+    background-color: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+}
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .note > summary::before {
+    background-color: #58a6ff;
+}
+
+/* --- Tip (green) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+    border-color: #3fb950;
+}
+[data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .tip > summary {
+    background-color: rgba(63, 185, 80, 0.1);
+    color: #3fb950;
+}
+[data-md-color-scheme="slate"] .md-typeset .tip > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .tip > summary::before {
+    background-color: #3fb950;
+}
+
+/* --- Important (purple) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.important,
+[data-md-color-scheme="slate"] .md-typeset details.important {
+    border-color: #a371f7;
+}
+[data-md-color-scheme="slate"] .md-typeset .important > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .important > summary {
+    background-color: rgba(163, 113, 247, 0.1);
+    color: #a371f7;
+}
+[data-md-color-scheme="slate"] .md-typeset .important > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .important > summary::before {
+    background-color: #a371f7;
+}
+
+/* --- Warning (amber) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.warning,
+[data-md-color-scheme="slate"] .md-typeset details.warning {
+    border-color: #d29922;
+}
+[data-md-color-scheme="slate"] .md-typeset .warning > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .warning > summary {
+    background-color: rgba(210, 153, 34, 0.1);
+    color: #d29922;
+}
+[data-md-color-scheme="slate"] .md-typeset .warning > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .warning > summary::before {
+    background-color: #d29922;
+}
+
+/* --- Caution/Danger (red) --- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger,
+[data-md-color-scheme="slate"] .md-typeset details.danger,
+[data-md-color-scheme="slate"] .md-typeset .admonition.caution,
+[data-md-color-scheme="slate"] .md-typeset details.caution {
+    border-color: #f85149;
+}
+[data-md-color-scheme="slate"] .md-typeset .danger > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .danger > summary,
+[data-md-color-scheme="slate"] .md-typeset .caution > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .caution > summary {
+    background-color: rgba(248, 81, 73, 0.1);
+    color: #f85149;
+}
+[data-md-color-scheme="slate"] .md-typeset .danger > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .danger > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .caution > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .caution > summary::before {
+    background-color: #f85149;
+}
